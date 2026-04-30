@@ -12,7 +12,7 @@ Virt板是QEMU官方提供的一个专门模拟ARM/RISC-V指令集的通用设�
 
 [https://github.com/buildroot/buildroot/tree/master/configs](https://github.com/buildroot/buildroot/tree/master/configs)
 
-<img src="https://cdn.nlark.com/yuque/0/2026/png/60715310/1777540469160-f7fdbf90-b014-4b25-97fe-a4ab52cffe40.png" width="2274.962962962963" title="" crop="0,0,1,1" id="ua605fae1" class="ne-image">
+![1](./images/QEMU学习（一）1.png)
 
 走一遍流程，用QEMU启动qemu_aarch64_virt_defconfig
 
@@ -254,7 +254,6 @@ dev           linuxrc       opt           sbin          var
 etc           lost+found    proc          sys
 
 ```
-
-<img src="https://cdn.nlark.com/yuque/0/2026/png/60715310/1777540914186-6f0f29eb-69c9-4094-ad9d-b566ce416ca9.png" width="1031.7037037037037" title="" crop="0,0,1,1" id="u5e2515b8" class="ne-image">
+![2](./images/QEMU学习（一）2.png)
 
 退出QEMU：先按ctrl + a,再按x
