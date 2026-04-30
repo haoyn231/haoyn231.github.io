@@ -1,10 +1,10 @@
 ---
-title: 异步编程之旅（03）同步与异步，Promise与Future
+title: 异步编程学习（03）同步与异步，Promise与Future
 published: 2026-02-15
 description: '同步与异步，从回调函数到 Promise/Future'
 image: ''
 tags: [promise, future, async, C++]
-category: '异步编程之旅'
+category: '异步编程学习'
 draft: false 
 lang: ''
 ---
