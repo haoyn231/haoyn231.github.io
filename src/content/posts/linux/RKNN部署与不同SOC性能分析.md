@@ -133,7 +133,7 @@ export GCC_COMPILER=/home/hao/projects/luckfox-pico/tools/linux/toolchain/arm-ro
 ./rknn_yolov5_demo model/yolov5.rknn model/bus.jpg
 ```
 
-（原版代码只会执行一次，修改了demo的源码，让它连续执行10次并获取精确的 NPU 推理时常，计算结果后打印出来，修改后的源码在 https://github.com/Hyrsoft/rknn_model_zoo/tree/yolov5_benchmark/examples/yolov5/cpp）
+（原版代码只会执行一次，修改了demo的源码，让它连续执行10次并获取精确的 NPU 推理时常，计算结果后打印出来，修改后的源码在 https://github.com/haoyn231/rknn_model_zoo/tree/yolov5_benchmark/examples/yolov5/cpp）
 
 运行结果：
 
@@ -209,4 +209,3 @@ write_image path: out.png width=640 height=640 channel=3 data=0xa5a31000
 
 - https://mp.weixin.qq.com/s/8cPELPb-4YGDo0fZ_o--Aw
 - https://wiki.luckfox.com/zh/Luckfox-Pico-Ultra/RKNN
-

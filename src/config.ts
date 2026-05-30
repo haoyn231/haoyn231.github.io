@@ -8,7 +8,7 @@ import type {
 import { LinkPreset } from "./types/config";
 
 export const siteConfig: SiteConfig = {
-	title: "好暖好温暖的博客",
+	title: "haoyn",
 	subtitle: "Do one thing and do it well.",
 	lang: "zh_CN", // Language code, e.g. 'en', 'zh_CN', 'ja', etc.
 	themeColor: {
@@ -46,7 +46,7 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 		{
 			name: "GitHub",
-			url: "https://github.com/Hyrsoft", // Internal links should not include the base path, as it is automatically added
+			url: "https://github.com/haoyn231", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
 		},
 	],
@@ -54,13 +54,13 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.jpeg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-	name: "好软好温暖",
+	name: "haoyn",
 	bio: "我的人生完蛋了qwq",
 	links: [
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/Hyrsoft",
+			url: "https://github.com/haoyn231",
 		},
 		{
 			name: "Twitter",

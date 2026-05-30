@@ -12,14 +12,14 @@ lang: ''
 
 记录如何通过 `pyocd` 调用 Keil 使用的 `.FLM` 格式外部下载算法，将程序烧录到 STM32H7 系列微控制器的 QSPI Flash 中。
 
-::github{repo="Hyrsoft/STM32H750XBH6_CMake_Template"}
+::github{repo="haoyn231/STM32H750XBH6_CMake_Template"}
 
 ### 项目背景
 
 | 项目         | 内容                                                         |
 | ------------ | ------------------------------------------------------------ |
 | **开发板**   | [反客STM32H750XHB6](https://item.taobao.com/item.htm?id=838568127129&pisk=gIi_MI2qJ8VFHG385oJFVo7BQuZfhp-yDtwxExINHlETliHZN-S4uF2fcWMJI58DSjgIMX4a6Sz4c-GztAS2IAJXcxH86oua_-hEGXbZ_mPqTnMoNPSZHmWi-bkRbc8g0iZgmodya3-rQAq0DXNEywfGvRy60GEYHlqda56wy3-rIv6aBLkp4mlDc0oAkihYWyCLIWeTH-F9dyezHoITkGQL9W2YDoFOWyBLn81ADSF9d9eYBNQADPUd9-yVBoExMyHLt-EYHjEvdvF3HDUHAJJ41A9WHUubK3YovWsADDwpi5M1Cg2tfR98aANBwdoCqPN-BWsv6ibG95e-2B7gFPGbJDkVUiPrB4c0efC9aPDxRXwsTBbQd4liVknJtiGjEDcQpbKf45HnU4ziXESzPlP_lcH61_NKfXigXf8AVjls7XaQ0EjYXl2Ssln9T1Zjpczozyf6TSurLcUIwBSIirgo3-G6fGEEzf08r2AfP73rEkszcgP5F8QX2kSbd7JBdZbcEQOznV0AZ0zTKJ5ydp1_vPe3d7JBdZb0WJ2e3p9C1kC..&spm=tbpc.boughtlist.suborder_itemtitle.1.3c6a2e8dVW0dPQ&sku_properties=-1%3A-1) |
-| **参考工程** | [Peakors/STM32H750XBH6_Template](https://github.com/Hyrsoft/STM32H750XBH6_CMake_Template) |
+| **参考工程** | [Peakors/STM32H750XBH6_Template](https://github.com/haoyn231/STM32H750XBH6_CMake_Template) |
 | **下载算法** | `FK750M6_XBH6_V0.FLM` (由开发板资料提供)                     |
 | **测试环境** | Fedora 42 (经验可跨平台通用)                                 |
 
