@@ -3,8 +3,8 @@ title: 使用Vivado进行ZYNQ的PL端开发基础流程
 published: 2026-05-18
 description: ''
 image: ''
-tags: []
-category: ''
+tags: [ZYNQ, FPGA]
+category: 'FPGA'
 draft: false 
 lang: ''
 ---
@@ -20,7 +20,7 @@ lang: ''
 
 完成后才能生成比特流文件。整个流程对应Vivado界面左侧的Flow Navigator。
 
-![](https://cdn.nlark.com/yuque/0/2026/png/60715310/1779079624128-ae9b577f-afcc-4ab9-851b-9f39582c1fd8.png)
+![0](./images/image%20(0).png)
 
 
 
@@ -64,13 +64,13 @@ endmodule
 
 对当前HDL工程进行一次检查，检查是否有语法错误，但是无法检查是否有逻辑错误。同时把HDL展开为真正的逻辑结构。
 
-![](https://cdn.nlark.com/yuque/0/2026/png/60715310/1779080392420-c6bebdac-c141-4724-b36a-7adfbdc72aee.png)
+![1](./images/image%20(1).png)
 
 RTL Analysis就是指对理解当前的HDL工程到底是在干什么，它可以生成一个概括性的原理图，但不是真正的电路，只是一个示意图（RTL级抽象电路），我们可以通过查看这个示意图来确定自己编写的Verilog是否符合要求。
 
 如下是示例工程中的led_flash对应的原理图：
 
-![](https://cdn.nlark.com/yuque/0/2026/png/60715310/1779080604512-307c1f04-7526-45dc-9e84-c9a3c338d9e2.png)
+![2](./images/image%20(2).png)
 
 可以看到其中的时钟信号、复位信号、LED信号、逻辑门和触发器等等。
 
@@ -82,18 +82,18 @@ RTL Analysis就是指对理解当前的HDL工程到底是在干什么，它可�
 
 设计综合 Synthesis 就是将我们的HDL工程转化为门级网表
 
-![](https://cdn.nlark.com/yuque/0/2026/png/60715310/1779081962139-a4cf99df-7674-4ba6-89c4-2ab015dbde46.png)
+![3](./images/image%20(3).png)
 
 可以得到工程对应的利用FPGA器件所具有的基本元件LUT搭建的电路图
 
-![](https://cdn.nlark.com/yuque/0/2026/png/60715310/1779081018706-1cb3121a-627e-4a3a-9588-a0a0084676b3.png)
+![4](./images/image%20(4).png)
 
 可以查看不同的LUT对应的逻辑表达式和真值表映射
 
-![](https://cdn.nlark.com/yuque/0/2026/png/60715310/1779081214597-a9d80fde-cd74-4a29-b1c6-2923bc80d899.png)
+![5](./images/image%20(5).png)
 
 通过Report Utilization，可以查看逻辑资源的使用情况
-![](https://cdn.nlark.com/yuque/0/2026/png/60715310/1779081286614-f9da128a-afbc-40d6-bc69-ac4d8f1a274d.png)
+![6](./images/image%20(6).png)
 
 ### 五、添加设计约束
 
@@ -101,7 +101,7 @@ RTL Analysis就是指对理解当前的HDL工程到底是在干什么，它可�
 
 在综合后的界面里，点击layout里的IO Planning，打开引脚分配界面，给信号分配真实的引脚
 
-![](https://cdn.nlark.com/yuque/0/2026/png/60715310/1779081755491-87e762b1-d3a7-46b6-8adb-a48b3b34cf9b.png)
+![7](./images/image%20(7).png)
 
 保存后就可以生成约束文件XDC
 
@@ -111,11 +111,11 @@ RTL Analysis就是指对理解当前的HDL工程到底是在干什么，它可�
 
 在综合得到真实电路图和添加约束后，就可以通过电路图和约束文件在FPGA里实现这个设计，即把之前的设计实现在FPGA器件里。
 
-![](https://cdn.nlark.com/yuque/0/2026/png/60715310/1779081936038-eb8daca3-1bcc-4438-8fcb-69f7cf4db8e4.png)
+![8](./images/image%20(8).png)
 
 完成设计后，可以在Device中看到FPGA中生成的电路，也可以看到连接关系
 
-![](https://cdn.nlark.com/yuque/0/2026/png/60715310/1779082744103-f158a2fd-ec6f-44e2-82af-053cd173c0d6.png)
+![9](./images/image%20(9).png)
 
 
 
@@ -123,7 +123,7 @@ RTL Analysis就是指对理解当前的HDL工程到底是在干什么，它可�
 
 实现设计后就可以生成比特流文件
 
-![](https://cdn.nlark.com/yuque/0/2026/png/60715310/1779082861342-0507273c-3f42-45b6-83ac-bc5f47202eb0.png)
+![10](./images/image%20(10).png)
 
 Generate Bitstream即可
 
@@ -131,7 +131,7 @@ Generate Bitstream即可
 
 通过Flow打开Hardware Manager，连接设备，烧录比特流即可
 
-![](https://cdn.nlark.com/yuque/0/2026/png/60715310/1779083036081-38cbfee1-69d0-499d-a187-ae5b345e4bdb.png)
+![11](./images/image%20(11).png)
 
 对于程序固化来说，如果是纯FPGA芯片，可以通过Vivado之间把bin烧录到开发板的Flash中，但是对于ZYNQ，PL端没有引出非易失性存储器的控制引脚，需要使用SDK通过PS端来完成程序固化，暂时不做展开。
 
