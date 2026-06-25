@@ -91,6 +91,12 @@ export const friendsConfig: FriendsConfig = {
 			avatar: "https://kitten-yyds.github.io/img/avatar_hu_602ec84ffdd99392.jpg",
 			rss: "https://kitten-yyds.github.io/index.xml",
 		},
+		{
+			name: "ska的编程日记",
+			url: "https://blog.sakura-io.com/",
+			description: "hey，这里是sakuraofficial的个人博客，站点名为：ska的编程日记。",
+			avatar: "https://blog.sakura-io.com/upload/1tx.jpg",
+		},
 		// {
 		// 	name: "Fuwari",
 		// 	url: "https://github.com/saicaca/fuwari",
