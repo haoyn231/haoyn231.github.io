@@ -97,6 +97,12 @@ export const friendsConfig: FriendsConfig = {
 			description: "hey，这里是sakuraofficial的个人博客，站点名为：ska的编程日记。",
 			avatar: "https://blog.sakura-io.com/upload/1tx.jpg",
 		},
+		{
+			name: "Zolin's blog",
+			url: "https://zolin.cc/",
+			description: "Zolin Lee · Full Stack / Electronics",
+			avatar: "https://zolin.cc/favicon.ico",
+		},
 		// {
 		// 	name: "Fuwari",
 		// 	url: "https://github.com/saicaca/fuwari",
