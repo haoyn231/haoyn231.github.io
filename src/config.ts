@@ -1,5 +1,6 @@
 import type {
 	ExpressiveCodeConfig,
+	FriendsConfig,
 	LicenseConfig,
 	NavBarConfig,
 	ProfileConfig,
@@ -45,6 +46,10 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Archive,
 		LinkPreset.About,
 		{
+			name: "友链",
+			url: "/friends/",
+		},
+		{
 			name: "GitHub",
 			url: "https://github.com/haoyn231", // Internal links should not include the base path, as it is automatically added
 			external: true, // Show an external link icon and will open in a new tab
@@ -72,6 +77,27 @@ export const profileConfig: ProfileConfig = {
 			icon: "fa6-brands:zhihu",
 			url: "https://www.zhihu.com/people/hao-hao-47-61-37",
 		},
+	],
+};
+
+export const friendsConfig: FriendsConfig = {
+	title: "友链",
+	description: "一些值得常去坐坐的地方。",
+	links: [
+		{
+			name: "kitten-yyds",
+			url: "https://kitten-yyds.github.io/",
+			description: "hi，这里是kitten-yyds的窝",
+			avatar: "https://kitten-yyds.github.io/img/avatar_hu_602ec84ffdd99392.jpg",
+			rss: "https://kitten-yyds.github.io/index.xml",
+		},
+		// {
+		// 	name: "Fuwari",
+		// 	url: "https://github.com/saicaca/fuwari",
+		// 	description: "A static blog template built with Astro.",
+		// 	avatar: "https://github.com/saicaca.png",
+		// 	rss: "https://example.com/rss.xml",
+		// },
 	],
 };
 
