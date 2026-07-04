@@ -8,6 +8,11 @@ on:
   # 允许你在 GitHub 上的 Actions 标签中手动触发此“工作流程”
   workflow_dispatch:
 
+# 同一时间只保留一个 Pages 部署队列，避免连续推送时部署状态互相抢占
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 # 允许 job 克隆 repo 并创建一个 page deployment
 permissions:
   contents: read
@@ -19,9 +24,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
       - name: Install, build, and upload your site
-        uses: withastro/action@v5
+        uses: withastro/action@v6
         with:
           # path: . # 存储库中 Astro 项目的根位置。（可选）
           node-version: 22 # 与本地开发环境保持一致
@@ -39,4 +44,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
