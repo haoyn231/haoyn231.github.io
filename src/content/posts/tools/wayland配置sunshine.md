@@ -3,7 +3,7 @@ title: 在 Wayland (KDE Plasma) 环境下配置 Sunshine
 published: 2026-01-24
 description: '在KDE Plasma (Wayland) 以及 NVIDIA 独立显卡环境下配置 Sunshine 服务'
 image: ''
-tags: [wayland, sunshine]
+tags: [wayland, sunshine, kde, 串流]
 category: 'tools'
 draft: false 
 lang: ''
@@ -103,4 +103,3 @@ AUR 提供的软件包通常已内置服务文件。
 
 - **安全性**: 用户模式服务比系统级服务更安全，且能更好地处理环境变量。
 - **日志排查**: 如果无法连接，请使用 `journalctl` 命令检查是否有关于 `vaapi` 或 `cuda` 的报错。
-

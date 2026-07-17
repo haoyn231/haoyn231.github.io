@@ -3,8 +3,8 @@ title: 用rust开发esp32的基础流程
 published: 2026-06-10
 description: '配置开发环境，构建项目，烧录与调试'
 image: ''
-tags: [rust, embassy, esp32]
-category: 'mcu'
+tags: [rust, embassy, esp32, mcu]
+category: '嵌入式'
 draft: false 
 lang: ''
 ---
@@ -117,4 +117,3 @@ E (93) boot_comm: Image requires efuse blk rev >= v128.5, but chip is v1.3
 E (99) boot: Factory app partition is not bootable
 E (104) boot: No bootable app partitions in the partition table
 ```
-

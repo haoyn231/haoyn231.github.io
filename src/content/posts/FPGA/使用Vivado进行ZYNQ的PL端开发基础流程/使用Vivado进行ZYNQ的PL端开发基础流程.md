@@ -3,8 +3,8 @@ title: 使用Vivado进行ZYNQ的PL端开发基础流程
 published: 2026-05-18
 description: ''
 image: ''
-tags: [ZYNQ, FPGA]
-category: 'FPGA'
+tags: [zynq, fpga, vivado, pl]
+category: 'fpga'
 draft: false 
 lang: ''
 ---
@@ -134,4 +134,3 @@ Generate Bitstream即可
 ![11](./images/image%20(11).png)
 
 对于程序固化来说，如果是纯FPGA芯片，可以通过Vivado之间把bin烧录到开发板的Flash中，但是对于ZYNQ，PL端没有引出非易失性存储器的控制引脚，需要使用SDK通过PS端来完成程序固化，暂时不做展开。
-

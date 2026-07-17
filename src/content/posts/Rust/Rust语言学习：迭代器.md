@@ -3,8 +3,8 @@ title: Rust语言学习：迭代器
 published: 2025-10-23
 description: '记录 Iterator trait、next 方法、消费适配器和迭代器适配器的用法'
 image: ''
-tags: [rust, 迭代器, Iterator, 闭包]
-category: 'Rust'
+tags: [rust, 迭代器, iterator, 闭包]
+category: 'rust'
 draft: false 
 lang: ''
 ---

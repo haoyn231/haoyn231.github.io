@@ -3,7 +3,7 @@ title: 使用docker编译openwrt
 published: 2025-08-02
 description: '利用 Docker 环境编译 OpenWrt 固件，以实现编译环境的隔离和一致性'
 image: ''
-tags: [openwrt, docker]
+tags: [linux, openwrt, docker, 固件]
 category: 'linux'
 draft: false 
 lang: ''

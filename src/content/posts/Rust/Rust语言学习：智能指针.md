@@ -4,7 +4,7 @@ published: 2025-10-23
 description: '梳理 Box、Rc、RefCell、Arc、Mutex 等智能指针的使用场景'
 image: ''
 tags: [rust, 智能指针, 所有权, 并发]
-category: 'Rust'
+category: 'rust'
 draft: false 
 lang: ''
 ---

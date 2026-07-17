@@ -4,7 +4,7 @@ published: 2025-08-28
 description: '梳理 trait bound、where 子句、多重约束与 C++ Concepts 的类比'
 image: ''
 tags: [rust, trait, 泛型, 约束]
-category: 'Rust'
+category: 'rust'
 draft: false 
 lang: ''
 ---

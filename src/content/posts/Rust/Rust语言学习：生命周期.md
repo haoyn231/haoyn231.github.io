@@ -4,7 +4,7 @@ published: 2025-10-21
 description: '梳理生命周期标注、借用检查器、结构体引用与生命周期省略规则'
 image: ''
 tags: [rust, 生命周期, 借用检查, 引用]
-category: 'Rust'
+category: 'rust'
 draft: false 
 lang: ''
 ---

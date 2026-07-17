@@ -3,8 +3,8 @@ title: Conan+CMake基本编译流程
 published: 2025-10-21
 description: '在CMake构建的项目中使用Conan2作为包管理器'
 image: ''
-tags: [CMake, Conan]
-category: 'C++'
+tags: [c++, cmake, conan, 构建]
+category: 'c++'
 draft: false 
 lang: ''
 ---
@@ -137,4 +137,3 @@ tools.cmake.cmaketoolchain:user_toolchain=["/path/to/your/project/cmake/aarch64-
     cmake --build --preset conan-debug
     cmake --build --preset conan-release
     ```
-

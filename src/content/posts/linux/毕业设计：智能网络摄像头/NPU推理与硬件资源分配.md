@@ -3,7 +3,7 @@ title: 毕设日志（四）NPU 推理与硬件资源分配
 published: 2026-02-12
 description: '添加 NPU 推理模块时触到了硬件性能瓶颈'
 image: './images/NPU推理与硬件资源分配.png'
-tags: [rknn, 异构计算, C++, rockit]
+tags: [rknn, 异构计算, c++, rockit]
 category: 'linux'
 draft: false 
 lang: ''

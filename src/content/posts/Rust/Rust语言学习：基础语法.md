@@ -4,7 +4,7 @@ published: 2025-07-29
 description: '整理变量、常量、数据类型、函数与控制流等 Rust 基础语法'
 image: ''
 tags: [rust, 基础语法, 变量, 控制流]
-category: 'Rust'
+category: 'rust'
 draft: false 
 lang: ''
 ---

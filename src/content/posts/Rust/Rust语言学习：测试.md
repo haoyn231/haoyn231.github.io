@@ -4,7 +4,7 @@ published: 2025-10-21
 description: '整理 Rust 单元测试、断言、错误测试与测试组织方式'
 image: ''
 tags: [rust, 测试, cargo, 单元测试]
-category: 'Rust'
+category: 'rust'
 draft: false 
 lang: ''
 ---

@@ -3,7 +3,7 @@ title: 点灯日记:PanGuBoard STM32MP157（二）
 published: 2026-06-10
 description: 'Cortex-M4协处理器的开发'
 image: './images/PanGuBoard.jpg'
-tags: [点灯日记, st, amp]
+tags: [点灯日记, st, amp, cortex-m4]
 category: 'linux'
 draft: false
 lang: ''
@@ -111,4 +111,3 @@ root@pangu:~# echo stop > /sys/class/remoteproc/remoteproc0/state
 oot@pangu:~# cat /sys/class/remoteproc/remoteproc0/state
 offline
 ```
-

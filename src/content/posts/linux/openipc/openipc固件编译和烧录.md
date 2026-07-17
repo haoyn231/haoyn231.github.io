@@ -3,7 +3,7 @@ title: openipc固件编译和烧录
 published: 2026-05-28
 description: ''
 image: ''
-tags: [linux, openipc, firmware]
+tags: [linux, openipc, firmware, 烧录]
 category: 'linux'
 draft: false 
 lang: ''

@@ -3,7 +3,7 @@ title: RKNN 部署与不同 SOC 性能分析
 published: 2026-02-26
 description: '记录 RKNN 的部署流程，测试 YOLOv5 模型在不同硬件平台上的性能表现，分析适用场景。'
 image: './images/RKNN部署与不同SOC性能分析_1.png'
-tags: [rknn, 异构计算, C++, yolo, rv1106, rk3588]
+tags: [rknn, 异构计算, c++, yolo, rv1106, rk3588]
 category: '嵌入式'
 draft: false 
 lang: ''

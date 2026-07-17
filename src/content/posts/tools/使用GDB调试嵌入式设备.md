@@ -3,7 +3,7 @@ title: 使用GDB调试嵌入式设备
 published: 2026-01-30
 description: '介绍在嵌入式 Linux 设备中使用 GDB 进行程序调试的方法'
 image: ''
-tags: [GDB, linux, C, C++, Debug]
+tags: [gdb, linux, c, c++, debug]
 category: 'tools'
 draft: false 
 lang: ''

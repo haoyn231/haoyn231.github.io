@@ -3,7 +3,7 @@ title: 从嘉立创导入元器件到kicad
 published: 2025-07-27
 description: '使用easyeda2kicad把嘉立创EDA在线元器件导入Kicad'
 image: ''
-tags: [kicad, 嘉立创EDA]
+tags: [kicad, 嘉立创eda, easyeda, 元器件]
 category: 'tools'
 draft: false 
 lang: ''

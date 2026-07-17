@@ -3,7 +3,7 @@ title: USBIPD的使用
 published: 2025-02-17
 description: '使用USBIPD把windows上的USB设备挂载进WSL2中'
 image: ''
-tags: [wsl, usbipd]
+tags: [wsl, usbipd, usb, windows]
 category: 'tools'
 draft: false 
 lang: ''
@@ -65,4 +65,3 @@ lang: ''
 ## 图形化软件
 
 ::github{repo="nickbeth/wsl-usb-manager"}
-

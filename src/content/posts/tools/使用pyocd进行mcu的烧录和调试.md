@@ -3,7 +3,7 @@ title: 使用pyocd进行mcu的烧录和调试
 published: 2025-04-23
 description: ''
 image: ''
-tags: [pyocd, mcu]
+tags: [pyocd, mcu, 烧录, 调试]
 category: 'tools'
 draft: false 
 lang: ''
@@ -218,4 +218,3 @@ pyocd flash --target mspm0g3507 ./build/empty.hex
 ```
 
 调试结束后，确定gdb进程关闭，否则下次进入调试会报错
-

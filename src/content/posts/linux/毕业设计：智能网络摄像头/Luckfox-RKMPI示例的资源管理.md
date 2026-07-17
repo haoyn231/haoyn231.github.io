@@ -3,7 +3,7 @@ title: 毕设日志（二）Luckfox RKMPI示例的资源管理分析
 published: 2026-01-31
 description: '分析 luckfox_pico_rtsp_retinaface_osd 例程中对媒体资源的处理，并阐述毕设思路'
 image: ''
-tags: [rockit, webrtc, rknn, rtsp, C++]
+tags: [rockit, webrtc, rknn, rtsp, c++]
 category: 'linux'
 draft: false 
 lang: ''
@@ -240,4 +240,3 @@ inline EncodedStreamPtr acquire_encoded_stream(RK_S32 chn_id, RK_S32 timeout_ms 
 ### 2. 针对 AI 推理的原始帧处理 (VI → RKNN)
 
 对于推理线程使用的原始数据帧，它的路径和所有权比较明确，毕竟同时只会有一个 AI 推理的线程存在。
-

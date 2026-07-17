@@ -3,8 +3,8 @@ title: C++学习笔记：std::unique_ptr自定义删除器
 published: 2025-12-15
 description: '使用std::unique_ptr，对c-style的资源进行RAII式的安全封装'
 image: ''
-tags: [C++]
-category: 'C++'
+tags: [c++, unique-ptr, raii, 删除器]
+category: 'c++'
 draft: false 
 lang: ''
 ---

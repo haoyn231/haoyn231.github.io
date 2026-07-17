@@ -4,7 +4,7 @@ published: 2025-08-23
 description: '记录 String 与字符串切片的创建、范围语法和所有权关系'
 image: ''
 tags: [rust, 字符串, 切片, 所有权]
-category: 'Rust'
+category: 'rust'
 draft: false 
 lang: ''
 ---

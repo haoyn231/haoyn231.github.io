@@ -3,8 +3,8 @@ title: Rust语言学习：枚举
 published: 2025-08-23
 description: '整理枚举定义、变体数据、Option、match 与 if let 的基本用法'
 image: ''
-tags: [rust, 枚举, match, Option]
-category: 'Rust'
+tags: [rust, 枚举, match, option]
+category: 'rust'
 draft: false 
 lang: ''
 ---

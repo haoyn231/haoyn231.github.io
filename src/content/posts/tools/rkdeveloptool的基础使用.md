@@ -3,7 +3,7 @@ title: rkdeveloptool
 published: 2025-11-21
 description: 'rkdeveloptool的基础使用'
 image: ''
-tags: [linux, rockchip]
+tags: [linux, rockchip, rkdeveloptool, 烧录]
 category: 'tools'
 draft: false 
 lang: ''
@@ -43,4 +43,3 @@ sudo ./rkdeveloptool wl 0 system_image.img
 ```bash
 sudo ./rkdeveloptool rd
 ```
-

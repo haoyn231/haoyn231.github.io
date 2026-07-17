@@ -3,8 +3,8 @@ title: IO多路复用：select/poll
 published: 2026-02-16
 description: ''
 image: ''
-tags: []
-category: ''
+tags: [linux, io, select, poll]
+category: 'linux'
 draft: true 
 lang: ''
 ---
