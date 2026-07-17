@@ -70,7 +70,7 @@ export const profileConfig: ProfileConfig = {
 		{
 			name: "Twitter",
 			icon: "fa6-brands:twitter",
-			url: "https://x.com/HyrsoftCN",
+			url: "https://x.com/haoyn231",
 		},
 		{
 			name: "Zhihu",
