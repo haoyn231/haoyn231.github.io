@@ -11,7 +11,22 @@ const getInitial = (name: string) => name.trim().charAt(0).toUpperCase();
         <div class="relative mb-7 pl-4">
             <div class="absolute left-0 top-1 h-6 w-1 rounded-md bg-[var(--primary)]"></div>
             <h1 class="text-3xl font-bold text-90">{friendsConfig.title}</h1>
-            <p class="mt-3 text-75">{friendsConfig.description}</p>
+            <p class="mt-3 text-75">
+                如果如果想要添加你的博客，可以向
+                <a
+                    href="https://github.com/haoyn231/haoyn231.github.io"
+                    target="_blank"
+                    rel="noopener"
+                    class="link text-[var(--primary)]"
+                >https://github.com/haoyn231/haoyn231.github.io</a>
+                这个项目提 PR，具体修改
+                <a
+                    href="https://github.com/haoyn231/haoyn231.github.io/blob/main/src/config.ts#L83-L87"
+                    target="_blank"
+                    rel="noopener"
+                    class="link text-[var(--primary)]"
+                ><code>src/config.ts</code> 中的 <code>friendsConfig.links</code></a>。
+            </p>
         </div>
 
         {friendsConfig.links.length > 0 ? (

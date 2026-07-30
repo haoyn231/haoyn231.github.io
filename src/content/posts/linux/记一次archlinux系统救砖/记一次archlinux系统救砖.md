@@ -1,5 +1,5 @@
 ---
-title: 记一次archlinux系统救砖：Btrfs磁盘爆满
+title: 记一次 Arch Linux 系统救砖：Btrfs磁盘爆满
 published: 2026-07-15
 description: '尝试多种方式删除系统里的大文件'
 image: './images/IMG_5704.webp'

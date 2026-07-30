@@ -82,7 +82,8 @@ export const profileConfig: ProfileConfig = {
 
 export const friendsConfig: FriendsConfig = {
 	title: "友链",
-	description: "一些值得常去坐坐的地方。",
+	description:
+		"如果如果想要添加你的博客，可以向 https://github.com/haoyn231/haoyn231.github.io 这个项目提 PR，具体修改 src/config.ts 中的 friendsConfig.links。",
 	links: [
 		{
 			name: "kitten-yyds",
