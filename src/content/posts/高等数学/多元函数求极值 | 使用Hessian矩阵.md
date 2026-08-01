@@ -6,6 +6,7 @@ image: './images/多元函数求极值.jpg'
 tags: [多元函数, 偏导, 微分]
 category: '高等数学'
 draft: false 
+showOnHome: false
 lang: ''
 ---
 ---

@@ -50,6 +50,7 @@ image: ''
 tags: []
 category: ''
 draft: false 
+showOnHome: true
 lang: ''
 ---
 `

@@ -31,6 +31,12 @@ export async function getSortedPosts() {
 
 	return sorted;
 }
+
+export async function getHomeSortedPosts() {
+	const sorted = await getRawSortedPosts();
+	return sorted.filter(({ data }) => data.showOnHome);
+}
+
 export type PostForList = {
 	slug: string;
 	data: CollectionEntry<"posts">["data"];

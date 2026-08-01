@@ -57,6 +57,12 @@
           "type": "boolean"
         },
         {
+          "title": "showOnHome",
+          "name": "showOnHome",
+          "type": "boolean",
+          "default": true
+        },
+        {
           "title": "language",
           "name": "language",
           "type": "string"
