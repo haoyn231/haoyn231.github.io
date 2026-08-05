@@ -5,6 +5,10 @@ on:
   # 如果你使用了别的分支名，请按需将 `main` 替换成你的分支名
   push:
     branches: [ main ]
+  discussion:
+    types: [created, edited, deleted, transferred, category_changed]
+  discussion_comment:
+    types: [created, edited, deleted]
   # 允许你在 GitHub 上的 Actions 标签中手动触发此“工作流程”
   workflow_dispatch:
 
@@ -16,6 +20,7 @@ concurrency:
 # 允许 job 克隆 repo 并创建一个 page deployment
 permissions:
   contents: read
+  discussions: read
   pages: write
   id-token: write
 
@@ -27,6 +32,8 @@ jobs:
         uses: actions/checkout@v7
       - name: Install, build, and upload your site
         uses: withastro/action@v6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           # path: . # 存储库中 Astro 项目的根位置。（可选）
           node-version: 22 # 与本地开发环境保持一致

@@ -4,11 +4,14 @@ import I18nKey from "@i18n/i18nKey";
 import { i18n } from "@i18n/translation";
 import MainGridLayout from "@layouts/MainGridLayout.astro";
 import { getSortedPostsList } from "../utils/content-utils";
+import { getGiscusCommentCounts } from "../utils/giscus-counts";
 
-const sortedPostsList = await getSortedPostsList();
+const [sortedPostsList, commentCounts] = await Promise.all([
+	getSortedPostsList(),
+	getGiscusCommentCounts(),
+]);
 ---
 
 <MainGridLayout title={i18n(I18nKey.archive)}>
-    <ArchivePanel sortedPosts={sortedPostsList} client:only="svelte"></ArchivePanel>
+    <ArchivePanel sortedPosts={sortedPostsList} commentCounts={commentCounts} client:only="svelte"></ArchivePanel>
 </MainGridLayout>
-

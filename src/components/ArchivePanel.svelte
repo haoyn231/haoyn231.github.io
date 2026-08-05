@@ -1,14 +1,17 @@
 <script lang="ts">
+import Icon from "@iconify/svelte";
 import { onMount } from "svelte";
 
 import I18nKey from "../i18n/i18nKey";
 import { i18n } from "../i18n/translation";
-import { getPostUrlBySlug } from "../utils/url-utils";
 import type { PostForList } from "../utils/content-utils";
+import { getGiscusTermFromSlug } from "../utils/giscus";
+import { getPostUrlBySlug } from "../utils/url-utils";
 
 export let tags: string[] = [];
 export let categories: string[] = [];
 export let sortedPosts: PostForList[] = [];
+export let commentCounts: Record<string, number> = {};
 
 const params = new URLSearchParams(window.location.search);
 tags = params.has("tag") ? params.getAll("tag") : [];
@@ -30,6 +33,10 @@ function formatDate(date: Date) {
 
 function formatTag(tagList: string[]) {
 	return tagList.map((t) => `#${t}`).join(" ");
+}
+
+function getCommentCount(slug: string) {
+	return commentCounts[getGiscusTermFromSlug(slug)] ?? 0;
 }
 
 onMount(async () => {
@@ -120,7 +127,7 @@ onMount(async () => {
 
                         <!-- post title -->
                         <div
-                                class="w-[70%] md:max-w-[65%] md:w-[65%] text-left font-bold
+                                class="w-[55%] md:max-w-[55%] md:w-[55%] text-left font-bold
                      group-hover:translate-x-1 transition-all group-hover:text-[var(--primary)]
                      text-75 pr-8 whitespace-nowrap overflow-ellipsis overflow-hidden"
                         >
@@ -133,6 +140,15 @@ onMount(async () => {
                      whitespace-nowrap overflow-ellipsis overflow-hidden text-30"
                         >
                             {formatTag(post.data.tags)}
+                        </div>
+
+                        <!-- comment count -->
+                        <div
+                                class="flex w-[15%] items-center justify-end gap-1 text-sm text-30 transition md:w-[10%]"
+                                aria-label={`${getCommentCount(post.slug)} ${i18n(I18nKey.comments)}`}
+                        >
+                            <Icon icon="material-symbols:comment-outline-rounded" class="text-[1rem]" />
+                            <span>{getCommentCount(post.slug)}</span>
                         </div>
                     </div>
                 </a>

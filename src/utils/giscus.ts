@@ -1,5 +1,9 @@
 const GISCUS_ORIGIN = "https://giscus.app";
 
+export function getGiscusTermFromSlug(slug: string): string {
+	return encodeURI(`/posts/${slug}/`).replace(/^\/+/, "");
+}
+
 function getTheme(): "light" | "transparent_dark" {
 	return document.documentElement.classList.contains("dark")
 		? "transparent_dark"
