@@ -1,0 +1,46 @@
+---
+import I18nKey from "@i18n/i18nKey";
+import { i18n } from "@i18n/translation";
+import { Icon } from "astro-icon/components";
+import { giscusConfig, siteConfig } from "../../config";
+
+const lang = siteConfig.lang.replace("_", "-");
+---
+
+{
+	giscusConfig.enable && (
+		<section
+			class="card-base mb-4 px-6 py-6 md:px-9"
+			aria-labelledby="comments-title"
+		>
+			<div
+				id="comments-title"
+				class="mb-5 flex items-center gap-2 text-lg font-bold text-black/75 transition dark:text-white/75"
+			>
+				<Icon
+					name="material-symbols:comment-outline-rounded"
+					class="text-[1.35rem] text-[var(--primary)]"
+				/>
+				{i18n(I18nKey.comments)}
+			</div>
+
+			<div
+				class="giscus-comments min-h-24"
+				data-giscus-comments
+				data-repo={giscusConfig.repo}
+				data-repo-id={giscusConfig.repoId}
+				data-category={giscusConfig.category}
+				data-category-id={giscusConfig.categoryId}
+				data-mapping={giscusConfig.mapping}
+				data-strict={giscusConfig.strict ? "1" : "0"}
+				data-reactions-enabled={giscusConfig.reactionsEnabled ? "1" : "0"}
+				data-emit-metadata={giscusConfig.emitMetadata ? "1" : "0"}
+				data-input-position={giscusConfig.inputPosition}
+				data-lang={lang}
+				data-loading={giscusConfig.lazyLoading ? "lazy" : "eager"}
+			>
+				<noscript>请启用 JavaScript 以查看和发布评论。</noscript>
+			</div>
+		</section>
+	)
+}

@@ -211,6 +211,7 @@ import {
 	MAIN_PANEL_OVERLAPS_BANNER_HEIGHT
 } from "../constants/constants";
 import { siteConfig } from '../config';
+import { initGiscusComments } from '../utils/giscus';
 
 /* Preload fonts */
 // (async function() {
@@ -369,6 +370,7 @@ function init() {
 	loadHue();
 	initCustomScrollbar();
 	showBanner();
+	initGiscusComments();
 }
 
 /* Load settings when entering the site */
@@ -427,6 +429,7 @@ const setup = () => {
 		}
 	});
 	window.swup.hooks.on('page:view', () => {
+		initGiscusComments();
 		// hide the temp high element when the transition is done
 		const heightExtend = document.getElementById('page-height-extend')
 		if (heightExtend) {

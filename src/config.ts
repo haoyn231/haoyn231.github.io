@@ -1,6 +1,7 @@
 import type {
 	ExpressiveCodeConfig,
 	FriendsConfig,
+	GiscusConfig,
 	LicenseConfig,
 	NavBarConfig,
 	ProfileConfig,
@@ -89,13 +90,15 @@ export const friendsConfig: FriendsConfig = {
 			name: "kitten-yyds",
 			url: "https://kitten-yyds.github.io/",
 			description: "hi，这里是kitten-yyds的窝",
-			avatar: "https://kitten-yyds.github.io/img/avatar_hu_602ec84ffdd99392.jpg",
+			avatar:
+				"https://kitten-yyds.github.io/img/avatar_hu_602ec84ffdd99392.jpg",
 			rss: "https://kitten-yyds.github.io/index.xml",
 		},
 		{
 			name: "ska的编程日记",
 			url: "https://blog.sakura-io.com/",
-			description: "hey，这里是sakuraofficial的个人博客，站点名为：ska的编程日记。",
+			description:
+				"hey，这里是sakuraofficial的个人博客，站点名为：ska的编程日记。",
 			avatar: "https://blog.sakura-io.com/upload/1tx.jpg",
 		},
 		{
@@ -118,6 +121,20 @@ export const licenseConfig: LicenseConfig = {
 	enable: true,
 	name: "CC BY-NC-SA 4.0",
 	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+};
+
+export const giscusConfig: GiscusConfig = {
+	enable: true,
+	repo: "haoyn231/haoyn231.github.io",
+	repoId: "R_kgDORLqzcA",
+	category: "General",
+	categoryId: "DIC_kwDORLqzcM4DCuDd",
+	mapping: "pathname",
+	strict: true,
+	reactionsEnabled: true,
+	emitMetadata: false,
+	inputPosition: "bottom",
+	lazyLoading: true,
 };
 
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
