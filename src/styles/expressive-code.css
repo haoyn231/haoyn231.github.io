@@ -3,6 +3,14 @@
         @apply !shadow-none;
     }
 
+    .ec-section.collapsible-start > details > summary {
+        @apply transition-colors;
+    }
+
+    .ec-section.collapsible-start > details > summary:hover {
+        color: var(--primary);
+    }
+
     .title {
         font-family: "JetBrains Mono Variable", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     }
