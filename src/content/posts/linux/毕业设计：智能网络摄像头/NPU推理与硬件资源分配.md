@@ -1,5 +1,6 @@
 ---
 title: 毕设日志（四）NPU 推理与硬件资源分配
+slug: linux-npu
 published: 2026-02-12
 description: '添加 NPU 推理模块时触到了硬件性能瓶颈'
 image: './images/NPU推理与硬件资源分配.png'

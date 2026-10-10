@@ -1,5 +1,6 @@
 ---
 title: 多元函数求极值 | 使用Hessian矩阵
+slug: calculus-hessian
 published: 2026-06-09
 description: '使用Hessian矩阵构建判别公式'
 image: './images/多元函数求极值.jpg'

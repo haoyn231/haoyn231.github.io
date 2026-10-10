@@ -12,6 +12,9 @@ export const tr: Translation = {
 	[Key.recentPosts]: "Son Paylaşımlar",
 
 	[Key.comments]: "Yorumlar",
+	[Key.copyShareLink]: "Paylaşım bağlantısını kopyala",
+	[Key.shareLinkCopied]: "Kopyalandı",
+	[Key.shareLinkCopyFailed]: "Kopyalanamadı",
 
 	[Key.untitled]: "Başlıksız",
 	[Key.uncategorized]: "Katagorisiz",

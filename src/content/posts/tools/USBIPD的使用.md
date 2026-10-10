@@ -1,5 +1,6 @@
 ---
 title: USBIPD的使用
+slug: tools-usbipd
 published: 2025-02-17
 description: '使用USBIPD把windows上的USB设备挂载进WSL2中'
 image: ''

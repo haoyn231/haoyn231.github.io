@@ -1,5 +1,6 @@
 ---
 title: 点灯日记:PanGuBoard STM32MP157（一）
+slug: linux-panguboard
 published: 2026-06-09
 description: '系统启动流程、固件编译与打包'
 image: './images/PanGuBoard.jpg'
@@ -127,4 +128,3 @@ eMMC TSV 的目标是 `mmc1`。FSBL 写入 eMMC boot partition，其余镜像写
 
 
 ## 碎碎念
-

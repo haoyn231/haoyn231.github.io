@@ -1,5 +1,6 @@
 ---
 title: Arch Linux通过Distrobox运行Vivado
+slug: fpga-archlinux-disrobox-vivado2020-archlinux-distrobox-vivado2020
 published: 2026-01-26
 description: '摆脱Ubuntu虚拟机难用的图形化界面和繁琐的配置'
 image: './image.png'

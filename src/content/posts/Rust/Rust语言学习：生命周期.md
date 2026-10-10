@@ -1,5 +1,6 @@
 ---
 title: Rust语言学习：生命周期
+slug: rust-rust-6
 published: 2025-10-21
 description: '梳理生命周期标注、借用检查器、结构体引用与生命周期省略规则'
 image: ''

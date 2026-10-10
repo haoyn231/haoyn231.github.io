@@ -1,5 +1,6 @@
 ---
 title: IO多路复用：select/poll
+slug: linux-io-select-poll
 published: 2026-02-16
 description: ''
 image: ''

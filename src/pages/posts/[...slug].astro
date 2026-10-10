@@ -1,5 +1,6 @@
 ---
 import path from "node:path";
+import ShareButton from "@components/control/ShareButton.astro";
 import Giscus from "@components/misc/Giscus.astro";
 import License from "@components/misc/License.astro";
 import Markdown from "@components/misc/Markdown.astro";
@@ -27,6 +28,20 @@ const { entry } = Astro.props;
 const { Content, headings } = await entry.render();
 
 const { remarkPluginFrontmatter } = await entry.render();
+
+const shareUrl = new URL(getPostUrlBySlug(entry.slug), Astro.site);
+shareUrl.searchParams.set("utm_source", "blog");
+shareUrl.searchParams.set("utm_medium", "copy_link");
+shareUrl.searchParams.set("utm_campaign", "post_share");
+
+const shareText = [
+	`《${entry.data.title}》`,
+	entry.data.description,
+	"好软，好温暖的博客文章",
+	shareUrl.toString(),
+]
+	.filter(Boolean)
+	.join("\n");
 
 const jsonLd = {
 	"@context": "https://schema.org",
@@ -108,6 +123,10 @@ const jsonLd = {
             </Markdown>
 
             {licenseConfig.enable && <License title={entry.data.title} slug={entry.slug} pubDate={entry.data.published} class="mb-6 rounded-xl license-container onload-animation"></License>}
+
+            <div class="flex justify-end onload-animation">
+                <ShareButton shareText={shareText} />
+            </div>
 
         </div>
     </div>

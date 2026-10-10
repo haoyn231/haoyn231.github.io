@@ -1,5 +1,6 @@
 ---
 title: 点灯日记:PanGuBoard STM32MP157（二）
+slug: linux-panguboard-2
 published: 2026-06-10
 description: 'Cortex-M4协处理器的开发'
 image: './images/PanGuBoard.jpg'

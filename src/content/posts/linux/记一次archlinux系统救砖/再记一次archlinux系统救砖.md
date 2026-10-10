@@ -1,5 +1,6 @@
 ---
 title: 再记一次 Arch Linux 系统救砖：不要盲目创建 Btrfs 快照
+slug: linux-archlinux-archlinux
 published: 2026-07-28
 description: '记录 Btrfs 元数据空间耗尽导致 Arch Linux 无法启动的排查与修复过程和复盘。'
 image: ''

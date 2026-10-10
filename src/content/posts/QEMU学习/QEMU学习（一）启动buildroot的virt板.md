@@ -1,5 +1,6 @@
 ---
 title: QEMU学习（一）启动buildroot的virt板
+slug: qemu-qemu-buildroot-virt
 published: 2026-04-30
 description: '用QEMU启动buildroot的virt板，走一遍流程，编译并启动一个简单的Linux系统'
 image: './images/QEMU学习（一）2.png'

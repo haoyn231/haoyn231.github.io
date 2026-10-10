@@ -9,6 +9,9 @@ enum I18nKey {
 	recentPosts = "recentPosts",
 
 	comments = "comments",
+	copyShareLink = "copyShareLink",
+	shareLinkCopied = "shareLinkCopied",
+	shareLinkCopyFailed = "shareLinkCopyFailed",
 
 	untitled = "untitled",
 	uncategorized = "uncategorized",

@@ -12,6 +12,9 @@ export const zh_TW: Translation = {
 	[Key.recentPosts]: "最新文章",
 
 	[Key.comments]: "評論",
+	[Key.copyShareLink]: "複製分享連結",
+	[Key.shareLinkCopied]: "已複製",
+	[Key.shareLinkCopyFailed]: "複製失敗",
 
 	[Key.untitled]: "無標題",
 	[Key.uncategorized]: "未分類",

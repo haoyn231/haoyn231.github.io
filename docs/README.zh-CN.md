@@ -45,7 +45,7 @@ deno run -A npm:create-fuwari@latest
 ```
 
 1. 通过配置文件 `src/config.ts` 自定义博客
-2. 执行 `pnpm new-post <filename>` 创建新文章，并在 `src/content/posts/` 目录中编辑
+2. 执行 `pnpm new-post <filename> [slug]` 创建新文章，并在 `src/content/posts/` 目录中编辑；`slug` 用于生成 ASCII 文章 URL
 3. 参考[官方指南](https://docs.astro.build/zh-cn/guides/deploy/)将博客部署至 Vercel, Netlify, GitHub Pages 等；部署前需编辑 `astro.config.mjs` 中的站点设置。
 
 ## 🚀 使用方法 2
@@ -54,7 +54,7 @@ deno run -A npm:create-fuwari@latest
 2. 进行本地开发，Clone 新的仓库，执行 `pnpm install` 和 `pnpm add sharp` 以安装依赖  
    - 若未安装 [pnpm](https://pnpm.io)，执行 `npm install -g pnpm`
 3. 通过配置文件 `src/config.ts` 自定义博客
-4. 执行 `pnpm new-post <filename>` 创建新文章，并在 `src/content/posts/` 目录中编辑
+4. 执行 `pnpm new-post <filename> [slug]` 创建新文章，并在 `src/content/posts/` 目录中编辑
 5. 参考[官方指南](https://docs.astro.build/zh-cn/guides/deploy/)将博客部署至 Vercel, Netlify, GitHub Pages 等；部署前需编辑 `astro.config.mjs` 中的站点设置。
 
 ## ⚙️ 文章 Frontmatter
@@ -62,6 +62,7 @@ deno run -A npm:create-fuwari@latest
 ```yaml
 ---
 title: My First Blog Post
+slug: my-first-blog-post
 published: 2023-09-09
 description: This is the first post of my new Astro blog.
 image: ./cover.jpg
@@ -82,6 +83,6 @@ lang: jp      # 仅当文章语言与 `config.ts` 中的网站语言不同时需
 | `pnpm dev`                        | 在 `localhost:4321` 启动本地开发服务器      |
 | `pnpm build`                      | 构建网站至 `./dist/`                   |
 | `pnpm preview`                    | 本地预览已构建的网站                        |
-| `pnpm new-post <filename>`        | 创建新文章                             |
+| `pnpm new-post <filename> [slug]` | 创建新文章并设置 ASCII URL slug         |
 | `pnpm astro ...`                  | 执行 `astro add`, `astro check` 等指令 |
 | `pnpm astro --help`               | 显示 Astro CLI 帮助                   |

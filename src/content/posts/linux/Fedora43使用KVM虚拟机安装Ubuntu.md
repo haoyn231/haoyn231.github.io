@@ -1,5 +1,6 @@
 ---
 title: Fedora43使用KVM虚拟机安装Ubuntu
+slug: linux-fedora43-kvm-ubuntu
 published: 2025-10-30
 description: '基于Fedora的KVM虚拟机安装Ubuntu作为开发环境'
 image: ''

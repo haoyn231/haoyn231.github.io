@@ -16,11 +16,21 @@ const args = process.argv.slice(2)
 
 if (args.length === 0) {
   console.error(`Error: No filename argument provided
-Usage: npm run new-post -- <filename>`)
+Usage: npm run new-post -- <filename> [slug]`)
   process.exit(1) // Terminate the script and return error code 1
 }
 
 let fileName = args[0]
+
+// Keep generated URLs readable and stable even when the source filename is Chinese.
+const slug = fileName
+  .replace(/\.(md|mdx)$/i, "")
+  .toLowerCase()
+  .replace(/[^a-z0-9]+/g, "-")
+  .replace(/^-+|-+$/g, "") || `post-${getDate()}`
+
+const configuredSlug = args[1]?.toLowerCase().replace(/[^a-z0-9-]/g, "-").replace(/^-+|-+$/g, "")
+const postSlug = configuredSlug || slug
 
 // Add .md extension if not present
 const fileExtensionRegex = /\.(md|mdx)$/i
@@ -44,6 +54,7 @@ if (!fs.existsSync(dirPath)) {
 
 const content = `---
 title: ${args[0]}
+slug: ${postSlug}
 published: ${getDate()}
 description: ''
 image: ''
