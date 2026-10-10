@@ -82,39 +82,39 @@ export const profileConfig: ProfileConfig = {
 };
 
 export const friendsConfig: FriendsConfig = {
-  title: "友链",
-  description:
-    "如果如果想要添加你的博客，可以向 https://github.com/haoyn231/haoyn231.github.io 这个项目提 PR，具体修改 src/config.ts 中的 friendsConfig.links。",
-  links: [
-    {
-      name: "kitten-yyds",
-      url: "https://kitten-yyds.github.io/",
-      description: "hi，这里是kitten-yyds的窝",
-      avatar:
-        "https://kitten-yyds.github.io/img/avatar_hu_602ec84ffdd99392.jpg",
-      rss: "https://kitten-yyds.github.io/index.xml",
-    },
-    {
-      name: "ska的编程日记",
-      url: "https://blog.sakura-io.com/",
-      description:
-        "hey，这里是sakuraofficial的个人博客，站点名为：ska的编程日记。",
-      avatar: "https://blog.sakura-io.com/upload/1tx.jpg",
-    },
-    {
-      name: "Zolin's blog",
-      url: "https://zolin.cc/",
-      description: "Zolin Lee · Full Stack / Electronics",
-      avatar: "https://zolin.cc/favicon.ico",
-    },
-    // {
-    // 	name: "Fuwari",
-    // 	url: "https://github.com/saicaca/fuwari",
-    // 	description: "A static blog template built with Astro.",
-    // 	avatar: "https://github.com/saicaca.png",
-    // 	rss: "https://example.com/rss.xml",
-    // },
-  ],
+	title: "友链",
+	description:
+		"如果如果想要添加你的博客，可以向 https://github.com/haoyn231/haoyn231.github.io 这个项目提 PR，具体修改 src/config.ts 中的 friendsConfig.links。",
+	links: [
+		{
+			name: "kitten-yyds",
+			url: "https://kitten-yyds.github.io/",
+			description: "hi，这里是kitten-yyds的窝",
+			avatar:
+				"https://kitten-yyds.github.io/img/avatar_hu_602ec84ffdd99392.jpg",
+			rss: "https://kitten-yyds.github.io/index.xml",
+		},
+		{
+			name: "sAkura-IO",
+			url: "https://www.sakura-io.com/",
+			description:
+				"hi，这里是sAkura-IO的个人博客",
+			avatar: "https://www.sakura-io.com/icon-512.png",
+		},
+		{
+			name: "Zolin's blog",
+			url: "https://zolin.cc/",
+			description: "Zolin Lee · Full Stack / Electronics",
+			avatar: "https://zolin.cc/favicon.ico",
+		},
+		// {
+		// 	name: "Fuwari",
+		// 	url: "https://github.com/saicaca/fuwari",
+		// 	description: "A static blog template built with Astro.",
+		// 	avatar: "https://github.com/saicaca.png",
+		// 	rss: "https://example.com/rss.xml",
+		// },
+	],
 };
 
 export const licenseConfig: LicenseConfig = {
