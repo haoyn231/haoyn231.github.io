@@ -1,5 +1,6 @@
 ---
 title: Rust语言学习：基础语法
+slug: rust-rust
 published: 2025-07-29
 description: '整理变量、常量、数据类型、函数与控制流等 Rust 基础语法'
 image: ''

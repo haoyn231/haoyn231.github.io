@@ -1,5 +1,6 @@
 ---
 title: 瑞芯微rk3576的分区、镜像格式与OTA探究
+slug: embedded-rk3576-ota
 published: 2026-07-09
 description: ''
 image: ''

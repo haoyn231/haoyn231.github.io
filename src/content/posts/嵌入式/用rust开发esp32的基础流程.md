@@ -1,5 +1,6 @@
 ---
 title: 用rust开发esp32的基础流程
+slug: embedded-rust-esp32
 published: 2026-06-10
 description: '配置开发环境，构建项目，烧录与调试'
 image: ''

@@ -1,5 +1,6 @@
 ---
 title: 毕设日志（二）Luckfox RKMPI示例的资源管理分析
+slug: linux-luckfox-rkmpi
 published: 2026-01-31
 description: '分析 luckfox_pico_rtsp_retinaface_osd 例程中对媒体资源的处理，并阐述毕设思路'
 image: ''

@@ -1,5 +1,6 @@
 ---
 title: Rust语言学习：迭代器
+slug: rust-rust-8
 published: 2025-10-23
 description: '记录 Iterator trait、next 方法、消费适配器和迭代器适配器的用法'
 image: ''

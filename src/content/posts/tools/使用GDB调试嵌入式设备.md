@@ -1,5 +1,6 @@
 ---
 title: 使用GDB调试嵌入式设备
+slug: tools-gdb
 published: 2026-01-30
 description: '介绍在嵌入式 Linux 设备中使用 GDB 进行程序调试的方法'
 image: ''

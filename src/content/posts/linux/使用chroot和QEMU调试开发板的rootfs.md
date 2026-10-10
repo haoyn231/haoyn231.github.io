@@ -1,5 +1,6 @@
 ---
 title: 使用chroot和qemu调试开发板的rootfs
+slug: linux-chroot-qemu-rootfs
 published: 2025-07-28
 description: '一般用于系统移植或者调试'
 image: ''

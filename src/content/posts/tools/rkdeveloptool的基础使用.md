@@ -1,5 +1,6 @@
 ---
 title: rkdeveloptool
+slug: tools-rkdeveloptool
 published: 2025-11-21
 description: 'rkdeveloptool的基础使用'
 image: ''

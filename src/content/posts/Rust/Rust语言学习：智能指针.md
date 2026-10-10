@@ -1,5 +1,6 @@
 ---
 title: Rust语言学习：智能指针
+slug: rust-rust-3
 published: 2025-10-23
 description: '梳理 Box、Rc、RefCell、Arc、Mutex 等智能指针的使用场景'
 image: ''

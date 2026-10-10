@@ -1,5 +1,6 @@
 ---
 title: RKNN 部署与不同 SOC 性能分析
+slug: embedded-rknn-soc
 published: 2026-02-26
 description: '记录 RKNN 的部署流程，测试 YOLOv5 模型在不同硬件平台上的性能表现，分析适用场景。'
 image: './images/RKNN部署与不同SOC性能分析_1.png'

@@ -1,5 +1,6 @@
 ---
 title: Rust语言学习：Trait的基础使用
+slug: rust-rust-trait
 published: 2025-08-27
 description: '记录 trait 定义、实现、默认方法和共享行为抽象的基础用法'
 image: ''

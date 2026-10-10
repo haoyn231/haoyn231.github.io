@@ -1,5 +1,6 @@
 ---
 title: Rust语言学习：结构体
+slug: rust-rust-7
 published: 2025-08-23
 description: '整理结构体定义、实例化、更新语法、方法和关联函数'
 image: ''

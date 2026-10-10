@@ -1,5 +1,6 @@
 ---
 title: openipc固件编译和烧录
+slug: linux-openipc-openipc
 published: 2026-05-28
 description: ''
 image: ''

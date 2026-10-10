@@ -1,5 +1,6 @@
 ---
 title: Rust语言学习：Trait约束
+slug: rust-rust-trait-2
 published: 2025-08-28
 description: '梳理 trait bound、where 子句、多重约束与 C++ Concepts 的类比'
 image: ''

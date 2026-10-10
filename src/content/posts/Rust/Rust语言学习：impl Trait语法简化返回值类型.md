@@ -1,5 +1,6 @@
 ---
 title: Rust语言学习：impl Trait语法简化返回值类型
+slug: rust-rust-impl-trait
 published: 2025-08-28
 description: '整理 impl Trait 在参数和返回值中的语法，用于隐藏复杂具体类型'
 image: ''

@@ -1,5 +1,6 @@
 ---
 title: 使用Vivado进行ZYNQ的PL端开发基础流程
+slug: fpga-vivado-zynq-pl-vivado-zynq-pl
 published: 2026-05-18
 description: ''
 image: ''

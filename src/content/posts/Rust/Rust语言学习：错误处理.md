@@ -1,5 +1,6 @@
 ---
 title: Rust语言学习：错误处理
+slug: rust-rust-9
 published: 2025-08-27
 description: '梳理 panic、Result、? 运算符和自定义错误处理的基本用法'
 image: ''

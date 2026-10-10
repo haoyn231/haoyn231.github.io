@@ -1,5 +1,6 @@
 ---
 title: Rust语言学习：字符串切片
+slug: rust-rust-2
 published: 2025-08-23
 description: '记录 String 与字符串切片的创建、范围语法和所有权关系'
 image: ''

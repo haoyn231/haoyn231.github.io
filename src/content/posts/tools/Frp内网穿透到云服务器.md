@@ -1,5 +1,6 @@
 ---
 title: Frp内网穿透到云服务器
+slug: tools-frp
 published: 2025-11-28
 description: '把本地服务器的端口映射到公网服务器，通过公网服务器ip地址+端口来访问内网'
 image: ''

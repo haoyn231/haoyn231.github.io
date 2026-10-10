@@ -1,5 +1,6 @@
 ---
 title: 在 Wayland (KDE Plasma) 环境下配置 Sunshine 
+slug: tools-wayland-sunshine
 published: 2026-01-24
 description: '在KDE Plasma (Wayland) 以及 NVIDIA 独立显卡环境下配置 Sunshine 服务'
 image: ''

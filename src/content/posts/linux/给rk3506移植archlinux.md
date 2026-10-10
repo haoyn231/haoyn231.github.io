@@ -1,5 +1,6 @@
 ---
 title: 给rk3506移植archlinux
+slug: linux-rk3506-archlinux
 published: 2026-07-15
 description: ''
 image: ''
@@ -24,4 +25,3 @@ lang: ''
 不同于buildroot/openwrt这种需要从源码来编译rootfs的系统，对于主流Linux发行版，像Debian/Ubuntu，我们不可能是从源码编译，更多是基于已有rootfs的适配，俗称糊一个系统（
 
 而archlinux又更为特殊：X86的archlinux内核和软件包都是滚动更新，众所周知的原因，arm设备的内核都是经过厂商魔改的，以厂商sdk的vendor内核为准，不存在一个上游内核。如果用archlinux arm或者armbian维护的内核，这样可以滚动更新，但就意味着要放弃很多功能，系统是残废的。
-

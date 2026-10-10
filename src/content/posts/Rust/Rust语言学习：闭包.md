@@ -1,5 +1,6 @@
 ---
 title: Rust语言学习：闭包
+slug: rust-rust-10
 published: 2025-10-23
 description: '记录闭包捕获环境、类型推断、Fn 系列 trait 与迭代器中的用法'
 image: ''
