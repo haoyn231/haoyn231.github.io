@@ -19,6 +19,7 @@ import remarkGithubAdmonitionsToDirectives from "remark-github-admonitions-to-di
 import remarkMath from "remark-math";
 import remarkSectionize from "remark-sectionize";
 import { expressiveCodeConfig } from "./src/config.ts";
+import dtsGrammar from "./src/grammars/dts.ts";
 import { pluginCustomCopyButton } from "./src/plugins/expressive-code/custom-copy-button.js";
 import { pluginFoldedCodeBlock } from "./src/plugins/expressive-code/folded-code-block.ts";
 import { pluginLanguageBadge } from "./src/plugins/expressive-code/language-badge.ts";
@@ -65,6 +66,14 @@ export default defineConfig({
 		}),
 		expressiveCode({
 			defaultLocale: "zh-CN",
+			shiki: {
+				langs: [dtsGrammar],
+				langAlias: {
+					devicetree: "dts",
+					"device-tree": "dts",
+					dtsi: "dts",
+				},
+			},
 			themes: [expressiveCodeConfig.theme, expressiveCodeConfig.theme],
 			plugins: [
 				pluginFoldedCodeBlock(),
