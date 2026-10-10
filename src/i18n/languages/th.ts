@@ -12,6 +12,9 @@ export const th: Translation = {
 	[Key.recentPosts]: "โพสต์ล่าสุด",
 
 	[Key.comments]: "ความคิดเห็น",
+	[Key.copyShareLink]: "คัดลอกลิงก์แชร์",
+	[Key.shareLinkCopied]: "คัดลอกแล้ว",
+	[Key.shareLinkCopyFailed]: "คัดลอกไม่สำเร็จ",
 
 	[Key.untitled]: "ไม่ได้ตั้งชื่อ",
 	[Key.uncategorized]: "ไม่ได้จัดหมวดหมู่",

@@ -12,6 +12,9 @@ export const zh_CN: Translation = {
 	[Key.recentPosts]: "最新文章",
 
 	[Key.comments]: "评论",
+	[Key.copyShareLink]: "复制分享链接",
+	[Key.shareLinkCopied]: "已复制",
+	[Key.shareLinkCopyFailed]: "复制失败",
 
 	[Key.untitled]: "无标题",
 	[Key.uncategorized]: "未分类",

@@ -12,6 +12,9 @@ export const ja: Translation = {
 	[Key.recentPosts]: "最近の投稿",
 
 	[Key.comments]: "コメント",
+	[Key.copyShareLink]: "共有リンクをコピー",
+	[Key.shareLinkCopied]: "コピーしました",
+	[Key.shareLinkCopyFailed]: "コピーに失敗しました",
 
 	[Key.untitled]: "タイトルなし",
 	[Key.uncategorized]: "カテゴリなし",

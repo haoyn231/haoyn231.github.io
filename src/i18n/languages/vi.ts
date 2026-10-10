@@ -12,6 +12,9 @@ export const vi: Translation = {
 	[Key.recentPosts]: "Bài viết mới nhất",
 
 	[Key.comments]: "Bình luận",
+	[Key.copyShareLink]: "Sao chép liên kết",
+	[Key.shareLinkCopied]: "Đã sao chép",
+	[Key.shareLinkCopyFailed]: "Sao chép thất bại",
 
 	[Key.untitled]: "Không tiêu đề",
 	[Key.uncategorized]: "Chưa phân loại",

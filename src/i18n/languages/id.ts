@@ -12,6 +12,9 @@ export const id: Translation = {
 	[Key.recentPosts]: "Postingan Terbaru",
 
 	[Key.comments]: "Komentar",
+	[Key.copyShareLink]: "Salin tautan",
+	[Key.shareLinkCopied]: "Disalin",
+	[Key.shareLinkCopyFailed]: "Gagal menyalin",
 
 	[Key.untitled]: "Tanpa Judul",
 	[Key.uncategorized]: "Tanpa Kategori",

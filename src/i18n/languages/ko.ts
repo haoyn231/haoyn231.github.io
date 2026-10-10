@@ -12,6 +12,9 @@ export const ko: Translation = {
 	[Key.recentPosts]: "최근 게시물",
 
 	[Key.comments]: "댓글",
+	[Key.copyShareLink]: "공유 링크 복사",
+	[Key.shareLinkCopied]: "복사됨",
+	[Key.shareLinkCopyFailed]: "복사 실패",
 
 	[Key.untitled]: "제목 없음",
 	[Key.uncategorized]: "분류되지 않음",

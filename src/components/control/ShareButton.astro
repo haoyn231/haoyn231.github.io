@@ -1,0 +1,104 @@
+---
+import I18nKey from "@i18n/i18nKey";
+import { i18n } from "@i18n/translation";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+	shareText: string;
+}
+
+const { shareText } = Astro.props;
+---
+
+<button
+	type="button"
+	data-share-button
+	data-share-text={shareText}
+	data-default-label={i18n(I18nKey.copyShareLink)}
+	class="group inline-flex h-9 items-center justify-center gap-2 rounded-lg bg-[var(--btn-regular-bg)] px-3 text-sm font-medium text-black/60 transition hover:bg-[var(--btn-regular-bg-hover)] hover:text-[var(--primary)] active:scale-95 dark:text-white/60"
+	aria-label={i18n(I18nKey.copyShareLink)}
+>
+	<span data-share-default class="inline-flex items-center gap-2">
+		<Icon name="material-symbols:share-outline-rounded" class="text-[1.15rem]" />
+		{i18n(I18nKey.copyShareLink)}
+	</span>
+	<span data-share-success class="hidden items-center gap-2 text-emerald-600 dark:text-emerald-400" aria-live="polite">
+		<Icon name="material-symbols:check-rounded" class="text-[1.15rem]" />
+		{i18n(I18nKey.shareLinkCopied)}
+	</span>
+	<span data-share-error class="hidden items-center gap-2 text-red-600 dark:text-red-400" aria-live="assertive">
+		<Icon name="material-symbols:error-outline-rounded" class="text-[1.15rem]" />
+		{i18n(I18nKey.shareLinkCopyFailed)}
+	</span>
+</button>
+
+<script>
+function copyWithFallback(text: string): boolean {
+	const textarea = document.createElement("textarea");
+	textarea.value = text;
+	textarea.setAttribute("readonly", "");
+	textarea.style.position = "fixed";
+	textarea.style.opacity = "0";
+	document.body.appendChild(textarea);
+	textarea.select();
+	const copied = document.execCommand("copy");
+	textarea.remove();
+	return copied;
+}
+
+async function copyShareText(text: string): Promise<void> {
+	if (navigator.clipboard && window.isSecureContext) {
+		await navigator.clipboard.writeText(text);
+		return;
+	}
+	if (!copyWithFallback(text)) {
+		throw new Error("Clipboard API is unavailable");
+	}
+}
+
+function showShareButtonState(
+	button: HTMLButtonElement,
+	state: "default" | "success" | "error",
+) {
+	for (const name of ["default", "success", "error"] as const) {
+		const element = button.querySelector<HTMLElement>(`[data-share-${name}]`);
+		if (!element) continue;
+		element.classList.toggle("hidden", name !== state);
+		element.classList.toggle("inline-flex", name === state);
+	}
+
+	if (state === "default") {
+		button.setAttribute("aria-label", button.dataset.defaultLabel ?? "");
+	} else {
+		const status = button.querySelector<HTMLElement>(`[data-share-${state}]`);
+		button.setAttribute("aria-label", status?.textContent?.trim() ?? "");
+	}
+}
+
+if (!document.documentElement.dataset.shareButtonReady) {
+	document.documentElement.dataset.shareButtonReady = "true";
+	document.addEventListener("click", async (event) => {
+		const target = event.target as Element | null;
+		const button = target?.closest<HTMLButtonElement>("[data-share-button]");
+		if (!button || button.disabled) return;
+
+		button.disabled = true;
+		const previousTimeout = Number(button.dataset.resetTimeout);
+		if (previousTimeout) window.clearTimeout(previousTimeout);
+
+		try {
+			await copyShareText(button.dataset.shareText ?? window.location.href);
+			showShareButtonState(button, "success");
+		} catch (error) {
+			console.error("Failed to copy the article share link", error);
+			showShareButtonState(button, "error");
+		}
+
+		button.disabled = false;
+		button.dataset.resetTimeout = window.setTimeout(() => {
+			showShareButtonState(button, "default");
+			delete button.dataset.resetTimeout;
+		}, 2000).toString();
+	});
+}
+</script>

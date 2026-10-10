@@ -12,6 +12,9 @@ export const en: Translation = {
 	[Key.recentPosts]: "Recent Posts",
 
 	[Key.comments]: "Comments",
+	[Key.copyShareLink]: "Copy share link",
+	[Key.shareLinkCopied]: "Copied",
+	[Key.shareLinkCopyFailed]: "Copy failed",
 
 	[Key.untitled]: "Untitled",
 	[Key.uncategorized]: "Uncategorized",

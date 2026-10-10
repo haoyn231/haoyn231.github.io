@@ -12,6 +12,9 @@ export const es: Translation = {
 	[Key.recentPosts]: "Publicaciones recientes",
 
 	[Key.comments]: "Comentarios",
+	[Key.copyShareLink]: "Copiar enlace",
+	[Key.shareLinkCopied]: "Copiado",
+	[Key.shareLinkCopyFailed]: "Error al copiar",
 
 	[Key.untitled]: "Sin título",
 	[Key.uncategorized]: "Sin categoría",
