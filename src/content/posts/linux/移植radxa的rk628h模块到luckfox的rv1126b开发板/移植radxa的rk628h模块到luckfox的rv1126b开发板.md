@@ -170,6 +170,9 @@ luckfox rv1126b的主dts文件中，用单独的dtsi文件来管理两个csi，�
 		port@1 {
 			reg = <1>;
 			#address-cells = <1>;
+			
+			
+
 			#size-cells = <0>;
 
 			mipi0_csi2_output: endpoint@0 {

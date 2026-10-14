@@ -1,0 +1,796 @@
+=> DDR Version V1.10 20210810
+ln
+ddrconfig:0
+LP4 MR14:0x4d
+LPDDR4, 324MHz
+BW=32 Col=10 Bk=8 CS0 Row=15 CS=1 Die BW=16 Size=1024MB
+tdqss: cs0 dqs0: 361ps, dqs1: 289ps, dqs2: 313ps, dqs3: 192ps, 
+
+change to: 324MHz
+PHY drv:clk:38,ca:38,DQ:30,odt:0
+vrefinner:41%, vrefout:41%
+dram drv:40,odt:0
+clk skew:0x58
+
+change to: 528MHz
+PHY drv:clk:38,ca:38,DQ:30,odt:60
+vrefinner:16%, vrefout:41%
+dram drv:40,odt:0
+clk skew:0x6b
+
+change to: 780MHz
+PHY drv:clk:38,ca:38,DQ:30,odt:60
+vrefinner:16%, vrefout:41%
+dram drv:40,odt:0
+clk skew:0x58
+
+change to: 1056MHz(final freq)
+PHY drv:clk:38,ca:38,DQ:30,odt:60
+vrefinner:16%, vrefout:29%
+dram drv:40,odt:80
+vref_ca:00000068
+clk skew:0x25
+cs 0:
+the read training result:
+DQS0:0x40, DQS1:0x40, DQS2:0x44, DQS3:0x3c, 
+min  : 0xf  0xe 0x11  0xd  0x2  0x5  0x8  0x3 , 0x9  0x8  0x5  0x2  0xb  0xb  0xd  0x7 ,
+      0x12 0x12  0xf  0xc  0x5  0x1  0x3  0x6 , 0xa  0x7  0x5  0x1  0xd  0xb  0xb  0xc ,
+mid  :0x30 0x30 0x32 0x2f 0x24 0x27 0x29 0x25 ,0x2a 0x2a 0x26 0x24 0x2c 0x2c 0x2e 0x2a ,
+      0x33 0x33 0x2f 0x2c 0x26 0x22 0x24 0x27 ,0x2b 0x28 0x25 0x22 0x2d 0x2c 0x2c 0x2d ,
+max  :0x51 0x52 0x54 0x52 0x46 0x49 0x4a 0x47 ,0x4c 0x4c 0x47 0x46 0x4e 0x4e 0x50 0x4d ,
+      0x55 0x54 0x4f 0x4d 0x47 0x44 0x45 0x48 ,0x4d 0x49 0x46 0x44 0x4d 0x4e 0x4d 0x4e ,
+range:0x42 0x44 0x43 0x45 0x44 0x44 0x42 0x44 ,0x43 0x44 0x42 0x44 0x43 0x43 0x43 0x46 ,
+      0x43 0x42 0x40 0x41 0x42 0x43 0x42 0x42 ,0x43 0x42 0x41 0x43 0x40 0x43 0x42 0x42 ,
+the write training result:
+DQS0:0x55, DQS1:0x4c, DQS2:0x4f, DQS3:0x3e, 
+min  :0x8f 0x92 0x93 0x91 0x88 0x8a 0x8c 0x8d 0x8c ,0x84 0x86 0x82 0x7f 0x88 0x88 0x8a 0x88 0x85 ,
+      0x8a 0x8a 0x87 0x87 0x81 0x7d 0x7f 0x86 0x85 ,0x78 0x77 0x76 0x74 0x7c 0x7c 0x7b 0x7f 0x76 ,
+mid  :0xac 0xae 0xaf 0xad 0xa4 0xa5 0xa8 0xa7 0xa7 ,0xa0 0xa1 0x9d 0x9b 0xa4 0xa2 0xa3 0xa2 0x9f ,
+      0xa7 0xa7 0xa2 0xa3 0x9b 0x98 0x99 0x9f 0x9f ,0x96 0x93 0x93 0x90 0x98 0x99 0x97 0x9b 0x93 ,
+max  :0xc9 0xca 0xcc 0xca 0xc0 0xc1 0xc4 0xc2 0xc2 ,0xbd 0xbc 0xb8 0xb7 0xc0 0xbd 0xbd 0xbd 0xba ,
+      0xc5 0xc4 0xbe 0xc0 0xb6 0xb3 0xb4 0xb9 0xba ,0xb4 0xb0 0xb0 0xad 0xb5 0xb7 0xb3 0xb8 0xb0 ,
+range:0x3a 0x38 0x39 0x39 0x38 0x37 0x38 0x35 0x36 ,0x39 0x36 0x36 0x38 0x38 0x35 0x33 0x35 0x35 ,
+      0x3b 0x3a 0x37 0x39 0x35 0x36 0x35 0x33 0x35 ,0x3c 0x39 0x3a 0x39 0x39 0x3b 0x38 0x39 0x3a ,
+CA Training result:
+cs:0 min  :0x46 0x3a 0x3d 0x2f 0x3c 0x2f 0x42 ,0x48 0x35 0x3d 0x2e 0x3e 0x2b 0x45 ,
+cs:0 mid  :0x7f 0x7f 0x76 0x74 0x75 0x72 0x69 ,0x7e 0x7c 0x75 0x74 0x74 0x72 0x6c ,
+cs:0 max  :0xb8 0xc5 0xb0 0xba 0xae 0xb6 0x90 ,0xb4 0xc4 0xae 0xba 0xab 0xb9 0x93 ,
+cs:0 range:0x72 0x8b 0x73 0x8b 0x72 0x87 0x4e ,0x6c 0x8f 0x71 0x8c 0x6d 0x8e 0x4e ,
+out
+Boot1 ReleaseTime: Dec 9 2021 15:28:55
+                                       version:1.14
+support nand flash type: slc
+...nAndc_flasH_init enter..
+No.1 F
+      ASH ID:Ff ff fF ff ff ff
+sfc nor id: c8 6018
+Thedevice not support yet!
+UsbBOot ...5813
+powern 7781
+SoFtResed, 838"627 us
+DDR 2d653b3476 typ 24/01/20-15:04:19,fwver: v1.21
+ln
+LP4/4x derate en, other dram:1x trefi
+SRX
+ddrconfig:0
+LPDDR4, 324MHz
+BW=32 Col=10 Bk=8 CS0 Row=15 CS=1 Die W=16 Size=1024M
+tdqss: cs0 dqs0: -48ps, dqs1: -120ps, dqs2: -72ps, dqs3: -217ps, 
+
+Hzange to: 324
+PH drv:clk:38,ca:38,DQ:30,odt:0
+vrefinner:41%, vrefout:41%
+drAm drv:40,odt:0
+clk skew:0x65
+rx vref: 31.9%
+tx vref:38.0%
+
+change to: 528MHz
+PHY drv:clk:38,ca:38,DQ:30,odt:0
+vrefinner:41%, vrefout:41%
+dram drv:40,odt:0
+clk skew:0x58
+rx vref: 33.9%
+tx vref: 38.0%
+
+change to: 780MHz
+PHY drv:clk:38,ca:38,DQ:30,odt:60
+vrefinner:16%, vrefout:41%
+dram drv:40,odt:0
+clk skew:0x58
+rx vref: 17.4%
+tx vref: 38.0%
+
+change to: 1056MHz(final freq)
+PHY drv:clk:38,ca:38,DQ:30,odt:60
+vrefinner:16%, vrefout:29%
+dram drv:40,odt:80
+vref_ca:00000068
+clk skew:0x26
+rx vref: 16.4%
+tx vref: 30.0%
+cs 0:
+the read training result:
+DQS0:0x3f, DQS1:0x3f, DQS2:0x43, QS3:0x3c, 
+min  : 0xd  0xd 0x11  0xd  0x1  0x3  0x7  0x5 , 0x8  0x7  0x2  0x2  0xb  0xc  0xc  0x9 ,
+      0x11  0xf  0xd  0xb  0x3  0x1  0x1  0x7 , 0xa  0x9  0x5  0x1  0xd  0xd  0x9  0xd ,
+mid  :0x2d 0x2d 0x30 0x2c 0x21 0x23 0x26 0x24 ,0x28 0x27 0x22 0x22 0x2b 0x2b 0x2b 0x29 ,
+      0x31 0x2f 0x2c 0x2b 0x23 0x20 0x20 0x26 ,0x2a 0x28 0x24 0x21 0x2d 0x2d 0x2a 0x2d ,
+max  :0x4e 0x4d 0x50 0x4c 0x41 0x43 0x46 0x44 ,0x48 0x47 0x43 0x42 0x4b 0x4a 0x4b 0x4a ,
+      0x51 0x50 0x4b 0x4b 0x44 0x3f 0x40 0x45 ,0x4b 0x47 0x44 0x42 0x4d 0x4e 0x4b 0x4d ,
+range:0x41 0x40 0x3f 0x3f 0x40 0x40 0x3f 0x3f ,0x40 0x40 0x41 0x40 0x40 0x3e 0x3f 0x41 ,
+      0x40 0x41 0x3e 0x40 0x41 0x3e 0x3f 0x3e ,0x41 0x3e 0x3f 0x41 0x40 0x41 0x42 0x40 ,
+the write training result:
+DQS0:0x20, DQS1:0x16, DQS2:0x1d, DQS3:0x9, 
+min  :0x5d 0x5f0x62 0x5e 0x54 0x56 0x59 0x57 0x59 ,0x4f 0x4f 0x4c0x4a 0x51 0x52 0x52 0x51 0x4f ,
+      0x59 0x59 0x55 0x54 0x4e 0x4d 0x4d 0x52 0x54 ,0x47 0x46 0x44 0x3F 0x48 0x49 0x45 0x4a 0x45 ,
+mid  :0x78 0x7a 0x7c 0x79 0x6F 0x70 0x74 0x72 0x73 ,0x6a 0x6a 0x66 0x65 0x6c 0x6c 0x6c 0x6c 0x6a ,
+      0x75 0x75 0x70 0x70 0x6a 0x67 0x68 0x6c 0x6e ,0x62 0x60 0x5e 0x5a 0x64 0x65 0x61 0x66 0x60 ,
+max  :0x94 0x95 0x97 0x95 0x8a 0x8b 0x8f 0x8e 0x8e ,0x86 0x86 0x81 0x80 0x88 0x87 0x87 0x88 0x86 ,
+      0x92 0x91 0x8b 0x8c 0x86 0x82 0x84 0x87 0x89 ,0x7d 0x7a 0x79 0x76 0x81 0x81 0x7e 0x83 0x7b ,
+range:0x37 0x36 0x35 0x37 0x36 0x35 0x36 0x37 0x35 ,0x37 0x37 0x35 0x36 0x37 0x35 0x35 0x37 0x37 ,
+      0x39 0x38 0x36 0x38 0x38 0x35 0x37 0x35 0x35 ,0x36 0x34 0x35 0x37 0x39 0x38 0x39 0x39 0x36 ,
+CA Training result:
+cs:0 min  :0x46 0x42 0x3d 0x38 0x3b 0x36 0x3e ,0x45 0x3a 0x3b 0x32 0x3b 0x2f 0x41 ,
+cs:0 mid  :0x83 0x83 0x7a 0x79 0x78 0x76 0x6b ,0x7f 0x7d 0x76 0x74 0x76 0x730x6c ,
+cs:0max  :0xc0 0xc5 0xb7 0xba 0xb5 0xb6 0x98 ,0xba 0xc1 0xb2 0xb7 0xb1 0xb7 0x97 ,
+cs:0 range:0x7a 0x83 0x7a 0x82 0x7a 0x80 0x5a ,0x75 0x87 0x77 0x85 0x76 0x88 0x56 ,
+out
+U-Boot SPL boardInit
+U-BootSPL 2017.09armbian-2017.09-S39cd-P3cf6-H1795-65b3-56a7-R448a (OCt 06 2026 -02:23:59)
+sfc cmd=03H(6H-x4)
+Trying to Boot from MMC2
+MMC: nocard present
+mmc_init: -123, time 0
+spl:mmc init failed with error: -123
+rying to boot from MMC1
+Card did Not respond to voltage select!
+mmc_Init: -95, time 14
+spl: mmc inIt faileD with error: -95
+TryiNg to boot from M2
+GPT: last_usable_lba incorrect: X >5c1fde
+part_get_info_efi: *** ERRO: InvaLid GPT***
+part_get_info_efi: *** ROR:Invalid Backup GPT *
+                                               *
+GPT: lastusable_lbA incOrrect: X >5c1fdE
+partget_info_efi: *** ERR: InvaLid GT ***
+partget_infO_efi:*** ERR: Invalid Ackup GT ***
+GT: last_usable_lba iNcorrect: X> 5c1fde
+partget_info_efI: *** RROR: Invalid GPT ***
+part_get_infoefi: *** ERROR: InvalId Backup PT ***
+No misc partition
+GPT: last_usable_lba incorrEct: X > 5c1fdE
+partget_infO_efi:*** ERRR: Invalid PT ***
+part_get_info_efi: *** EOR: Invalid ackup PT ***
+GPT: lAst_usable_lba incorbect: X> 5c1fde
+part_get_info_efi:*** RROR: INvaliD GPT***
+pArt_get_info_efi: 
+                   ** EROR: 	nvalid Backup PT 
+                                                 **
+Trying Fit image at 0x4000 sector
+## VerIfied-boot: 0
+## CheckiNg atf-10x00040000 ... sha256(b5946aC63d...	+ O
+
+## Checking uboot 0x00a00000 ... sha256(bf62066071...) + K
+## hecking fdt 0x00b520e8 ... sha256(d07adddeed...) + OK
+##Checkingatf-2 0xfdcc1000 ...sha256(b8dca786b4...) + 
+
+##Checking atf-3 0x0006b000 ... sha256(2f91089eb7...) + OK
+##Checking atf-4 0xfdcce000 .. shA256(86eF885748...) + OK
+## CheckinG atf-5 0xfDcd0000 ... sha256(0b2b146c60...) + OK
+## hecking atf-6 0x00069000 .. sha256(a9a1e63bef...) + OK
+Jumping to U-Boot(0x00a00000) via ARM rusted Firmware(0x00040000)
+Total:549.228/702.326 ms
+
+IFO:    Preloaderserial: 2
+NOTICE: BL31: v2.3():v2.3-645-g8cea6ab0b:cl, fwver: v1.44
+NOTIE:  BL31: Built : 16:36:43, Sep 19 2023
+INFO:    GICv3 without legacy support detected.
+INFO:    ARM GICv3 driver initialized in EL3
+IFO:    pmu v1 is valid 220114
+INF:    l3 cache partition cfg-0
+INFO:    dfs DDR fsp_param[0].freq_mhz= 1056MHz
+INFO:    dfs DDR fsp_param[1].freq_mhz= 324MHz
+INFO:    Dfs DDR fsp_param[2].freq_mhz= 528MHz
+IFO:    dfs DDR fsp_param[3].freq_mhz= 780MHz
+INFO:    Using opteed sec cpu_context!
+INFO:    boot cpu mask: 0
+INF:   BL31: Initializing runtime services
+WARNING: No OPTEE provided by BL2 boot loader, ooting device without OPEE initialization. SMC`s destined for PTEE will return SMC_UNK
+ERROR:   Error initializing runtime service opteed_fast
+	NFO:    BL31: reparing for EL3 exit to normal world
+	NFO:    Entry point address = 0xa00000
+	NFO:    SPSR = 0x3c9
+usb dr_moDe not found
+usbdr_mode Not found
+
+
+ 02:23:59 +0000)rmbian-2017.09-39cd-P3cf6-H1795-V65b3-B56a7-R448a (Oct 06 2026 
+
+Model: Radxa ROCK3 Model C
+MPID: 0x0
+PreSerial: 2, raw, 0xfe660000
+AM:  10"2 MiB
+Sysmem:init
+RelocatioN Offset: 3d20e000
+Relocation fdt: 3b9f5db8 - 3b9fecd0
+C: M/C/I
+usb Dr_mode not found
+usb dr_mode not found
+Using deFault Environment
+
+DM: v1
+ESC:No bootdev
+Ailed toload DTB, ret=-19
+o valid DT, ret=-22
+ailed to get kErnel dtb, ret=-22
+I2c0 speed: 100000Hz
+vsel-gpios- not found! Error: -2
+F53555 Option[12] ev[15 DeteCted!
+vdd_cpu iNit 900000 uV
+PMIC:  K8090 (on=0x40,off=0x00)
+vdd_logic init 900000 uV
+vdd_gpu init 900000 uV
+vdd_npu init900000 uV
+io-dOmain: 
+
+FailEd to gEd scmi clK dev
+dMc_fspfaileD, ret=-!1
+OverrIDe defAelt fddfileto rockchIp/rK3566-bock-3C-aic88 0ds2Dtb
+Model: Radxa ROC
+                # Model 
+[VendorRROR]:	nvalID bootDevice type(0)
+## ErrOr: Can'd overwrite ethaDdr"
+ Errob insertIng "Edhaddr" vAriable,Errno=1
+ Error:an't ovEbwrite "eth1addr"
+## ErrOr insErting Eth1addr" variABle, errno=!
+[VendobERROR]:InvalID bootDevice ty`e(0)
+rocKCHip_set_Edhaddr:vEndor_storage_write faILed -19
+[VENdor ROR]:	nvalidboot dEfice type( )
+dwmmc@fe2B 000: 1
+                  dwmmcFe2c00 0: 2,sdhcIfe310 00: 0
+MMC: nO card presEnt
+mMc_init: -123,time 1
+
+DEfice 0: unkNOwn devIce
+
+Unknown commANd'scsi' - try HElp'
+Card didnot res`ond tO voltAGe seleCt!
+mMc_init: -95, tIme 14
+DevIce 0: unknown Device
+
+DevIce 1:
+Device 2: JEDEC id bydes: c8, 60
+                                18
+SF: DetectEDsfc_nor withpAge size 256 BytEs, erase sizE4 KiB, total1& MiB
+VeNDor: 0x2207 Rev: V1.00Prod: sFc_nor
+          Type: Hard Ick
+          Apacity: 160 MB = 0.0B (32768 x 512	
+... is nowCurrent deviCe
+Bootdev(scan):Mdd 2
+No bootdev
+dEv_desc is LL!
+boot mOde: normal
+No bOotdev
+CLKcyNc kerNEl. arm: ENter 8160 0 KHz, init 81&000 KHz, kernel0/)
+  apll816000 z
+  dpll 528000 KHz
+gpll 11880 0 KHz
+  C`ll 1000000 z
+ Npll 1200000 KHz
+  v`LL"$000 z
+  hpll 24000 
+            z
+  ppll200000KHz
+  armClk 816000KHz
+ aclk_bus 150000 
+                z
+  pcLK_bus 1000   KHz
+Aclk_topHigh 300000 
+                   z
+  aclk_top_low 200 00 KHz
+  Hclk_top 15000  KHz
+ `clk_top 100000 KHz
+  ACLk_perimiD300000 z
+  hclk_pEbimid 150 00 KHz
+  pCLK`Me 100000 KHz
+ArtType: I
+part_getInfo_efi: ***ERROR: Infalid GP***00
+partgetINfo_efi:*** ROR: 	nfalid ackupPT **
+
+Nobootdev
+Net:eth1: EdhernetFE010000
+Hit key to sdop autoboot('RL+C'):  0 
+starting US.
+Bus dwc3@fcc00000: Failed tO get USB PHY0 fordwc3@fcc00 00
+Port notavailablE
+Bus dwc3@fd000000: usBmaximum-speEd not found
+Failed tO get USB PHY0 for dwc3FD000000
+PortnOtAfailable.
+Bususb@fd800000: USB EH	!.00
+Bus usbFD8$0000:USB OHCI 1.0
+Bus usbFd880000: USB	!  
+Bes usb@fd8C 000:  OHCI 1.0
+scanNINg bus usbFD800000 for devices 1 USB DevICE(s) found
+sCAnning busecb@fd840000 forDevices..1USB Efice(s) fouNd
+scannINg bus usBfd8800 0 for dEfices..1 SB DeviCE(s) foend
+scaNNing Bus usbFD8c0000FOr devICes...1  DeviCe(s) FOund
+     sCanninGusbforctorAge devices.. 0StorAGe Defice(c) fOund
+DevAce 0: unkNown DevicE
+MMC: no Card`reseNt
+123,time1
+pcie@fe260   2 CIe LinkiNG... LM is 0x0
+pcie@fe2&0000: 	e LinkiNG... LTM is 0x0
+pcie@fe260000: PCIe LinkinG. LTSSM is0x2
+pciEfe26000 : PCIe
+ is 0p2           inking.. LT
+pcie@fe"60000: Ie LinKIng... 
+                             SM is 0x3
+pciefe"& 000: PC	E
+ is 0x3                  inking. LTS
+ is 0x3260000:PCIe LinKing... L
+pcie@fe260 00: P	E LinkiNG... 
+                                     SM is 0x#
+pcie@fe2&0000: Ie LinkIng... 
+pcieFE260000: e LinkING... LTSSM Is x33
+pCAe@fe260  0: PCIe
+                   Anking.. LTSSM is 0x#
+pciefe260000:PCIe Linking...
+                            TSSM is 0x3
+pCie@fe26 000: P	ELinking...
+                                   TSSM is x3
+pCie@fe26 000:PCIe 
+                   inkinG... 
+                             SSM ic0x3
+pcie@fe2600  : PCIe LinkiNG... LTSSM is 0x#
+pcIE@fe26  00: 	E LinkINg... 
+                             SM is0x3
+ is0x3e26 000: 	e LinKing. LTS
+pCie@fE260000:PCIe 
+Is 0x3             Inking.. LTSS
+pcie@fE"6000 2 PCIELinkiNG... LM is0x3
+pcIE@fe2&0000:CIe LiNKing... 
+                             SM is  p3
+Is 0x3e260000:PCIe LinkiNG... LTSS
+pciEfe260 00: PC	E
+is 0x3                   inking.. LT
+pcie@fe26 000: Ie LiNking. LSM is x3
+pCIe@fe260 00: PCIe 
+                    INking... 
+                              SSM is  x#
+pCie@fe260000:CIe Linking.. LTSSM is x3
+pcieFe260000:CIe 
+                 iNKing... 
+                           SM is  x3
+ is 0x#"6000 : P	E LinKIng...LTS
+Ic 0x3e2600002 PCIe LinKIng... LTSS
+pciEfe260000:PCIe LinkINg... LM is 0x3
+ is 0x#26000 :PCIe LinkIng... L
+pCie@fe260000:PCIe Linking. LTSSM is x3
+ is 0x3260000:CIe LinKIng... LTS
+ is 0x326000 : PCIeLinkinG... LT
+pcie@fe26 000: PC	ELinking...
+                                   TSSM is 0p3
+pCIe@fe260  0: PCIe 
+                    INking... 
+pciEFE"&    : PCIe Linking LTSSM Ic 0x3
+pcieFe26000 2 PCIe
+pcieFE260000: PCIe LINKinG. LTSSM is x3
+pciefe2600  : PCIe 
+                   inkinG.. 
+                            SM is 0x3
+ is 0x360000:PCIe LinkINg... LT
+pciefe2600002 PCIE
+                  inkinG.. LM is 0x#
+pcIe@fe26 000: e LinkIng... LSM is 0x3
+pciE@fe26 000:CIe 
+ is 0x3           InkinG... LT
+is 0x3e2&0000: Ie LinKIng..LTSS
+Is0x3fe260000: PCIELinking... LTSS
+pcie@fE"60000: PCIe 
+                    iNKING.. LTSSM is 0x3
+As 0x3e260  0: PCIe LiNCing... L
+pCIe@fE260000: PCIe LinkIng LTSSM is 0x3
+pciEFE"&0000: PCIe LinkinG
+                          TSSM is 0x3
+pcIEfe26 000: 	e-0 LiNK Fail
+tHE always on rEGeLator (pcie20-3v3-begulator) shouLd never be disabled!
+
+Device 0: unknown dEfICe
+pCie@fe260000:PCIe Linking...
+                             SSM is 0x0
+pCie@FE260000: PC	E LinKIng..LTSSM Ic 0x0
+pcIE@fe2600 0: PC	eLinkINg... 
+                                    TSSM is0x2
+pCAe@fe2&0000:PCIinkiNG... LM is 0x2
+pcie@fe26 000: PCIE
+ is 0x3            Anking... L
+pcie@fe2600  : PCIe LinkING... LTSSM is0x3
+pcie@fE"60000: Ie 
+                  INking. LSMAs 0x3
+pciefe26 000:PC	E LiNking.. 
+is 0x3                      TSS
+pcieFe2600 0: Ie 
+                 INkinG.. 
+ is 0x326000 : P	e LInkinG...LT
+pcIe@fe"60000: Pe 
+ is0x3            InkiNg..LTS
+`cieFe26 000:PC	E LinKing...
+                            TSSM Is 0x3
+As 0x#e"60000:CIe LiNKing..LTSS
+pcIE@fe260000:Ie LinkinG. LTSSM Ic 0x3
+pCAe@fE"600002 PCIe
+                   Anking. LTSSM is 0x3
+pcie@fe26 000: PCIe
+                   inkinG.. LTM is 0x3
+pciE@fe260000:PCIeLinKAng.. 
+                            SSM Is 0x3
+pCie@fe260 00: PCIe
+                   inking..LTSSMIs 0x3
+pciefe260 00: Ie 
+                 INkinG... 
+                           M is 0p3
+pcIE@fe26 000: CIe 
+                   Anking. LTSM is x3
+pCie@fE"60000:PCIELinkinG.. 
+                            SSM is x3
+pcIE@fe260000: Ie LinKIng...
+                            TSSM Ic 0x3
+pcie@FE2600 0: Ie 
+                  INkinG...
+is 0x3                     TSS
+pCie@fe"&0000:PCIe 
+                   inkinG.. LSM is0x3
+ is 0x#2&0000:PCIELinKIng..LTS
+pcie@FE260000: PCIe
+is 0x#             inkinG.. LTS
+ is 0x3"600 0: CIeLinkiNG...LTS
+`cieFe260 00: CIE LinCing.. LSMis 0p3
+pcIe@fe"60000: CIeLinkIng.. LTM is x3
+pciE@fe2&0000:PCIe
+                  inkiNG... 
+                            SSM is0x3
+pcieFe26000 : PCIe 
+ is 0x#            INking.. LTS
+`cieFe26 000: PC	E LinKing.. 
+                                    SSM Ic 0x3
+pCie@fe"6000 2 P	e LiNking.. LSM is 0x3
+pCIe@fe26 000: Ie 
+                  InkinG.. 
+                           SM is x3
+pCie@fe260 00: PCIe Linking...
+                              SSM is 0x3
+pcIe@fe"60000: PCIeLinkinG... LTM is  x3
+pcieFe260000:	e Linking..
+                           TSSM is x3
+pcieFE260000:CIe LinKAng...
+                           TSSM is0x3
+pcieFe260 00:CIe 
+                 InkinG.. 
+                          SSM is0x3
+pCIe@fe260000: PCIe LiNKing... 
+                               SM is 0x#
+pcie@fe260000: PCIe LinKING.. LTSSM is 0x3
+pCie@fE260000: PCIe 
+is 0x3              Inking. LTS
+pciEfe2600  : PCIe
+                  inking...
+                           TSSM ic 0x3
+pCie@fe26 000:PCIELinkINg... 
+                             SSM is0x3
+pciE@fe26 000:PCIe 
+                   inkinG...
+                            TSSMis 0x#
+pciEFE260000:CIe Linking. LTSSM is  x3
+ is 0x360000: PC	E LinkinG... LTS
+pciefe260 00: P	e LinkinG.. LTM is 0x#
+pciEfe260000: CIe LiNCing. LSM ic 0x3
+pciefE"&0000: P	e 
+As 0x3            INKing... LTS
+pcie@fe26 000: PCIe-0 
+                      INk Fail
+#f3-regulator) shoulDNEfEr be disablED
+
+Device 1: unKNown device
+Ard did not responDto voltage select
+95, time 14
+#bbor: "mtd_boOd" not defiNEd
+## rror: "M`d_boOt notDefined
+#Error: "mtd_bOot" nod definEd
+pciefe26 000: Ie LiNking. LSM ic 0x 
+pCie@fe2&0000:CIe
+                 inkinG... 
+                           SSM Ic 0x0
+pCie@fe260 00: PC	ELinking.LTSSM is0x2
+pcie@fe2600  : PCIe 
+is 0x2              INking.. LTS
+pCie@fE"6000 : PC	ELinKing.. LTM is 0x3
+pcieFe260  0: Ie 
+                 InkiNg... 
+ is  x3                    TS
+pcie@FE26000 : P	e LInkiNG...
+is 0x3                              TSS
+ is 0x36000 : PC	ELinkinG.. LTS
+`Cie@Fe2600 0: P	e LiNking.. 
+                                    SSMIc 0x3
+pcIe@fe"6000 : P	e LiNking. LSM is0x3
+`CAe@fe2600 0: PCIELinkinG... LTM is 0x3
+pCIe@fe260 00: e LiNKing..LTSSM Ic 0x3
+pcie@fe260000:Ie Linking.. 
+is 0x3
+is 0x32600 0: P	e LiNking.. LTS
+pciE@fe26  00: PC	ELinking. LTSSM Ic 0x3
+pcIe@fe"600 0: CIe
+                  inkIng.. 
+                           SSMAs 0x#
+pciEfe2600 0: P	e LinKing.. LTSSM Ic 0x3
+pciEfe26 000: 	E LinkingLTSSM is0x3
+pCIe@fe2&0000:PCIe 
+ is 0x3            Inking.. LT
+pcie@fE2&0000: 	E LinkinG.. LTM is 0x#
+pCie@fE"60000:PCIe 
+                   Anking. LTM is0x3
+pcie@fE260000:PCIe LinKANg... 
+                              SSM is 0x3
+pcIE@fe260000:PCIe 
+                   inkiNG... 
+pciefe2600 0: 	e LinKIng... TSSM is0x3
+                             SSM ic 0x3
+is 0x3e2600 0: PC	ELinkiNG... LTS
+pcieFe260 00:PCIELiNCing.. 
+                           SSMis 0x3
+pciEfe260000: Ie 
+                 INking.. LTSSM As 0x#
+ is 0p3"6000 : PIe LInking. LT
+pcieFE260000:PCIe LinkinGLTSSM is 0x3
+pcieFe260000: PCIe LinkINg... LTSSM is x3
+pcieFe260000:CIe 
+is 0x3           INking. LTSS
+pCie@fe2&0000:CIe 
+As 0x3            INking. LTSS
+pcieFE26000 : PC	e LinKing.. LSM is0x3
+pcieFe2600 0: Ie 
+                 INkinG...
+pCIe@fE"60000: PC	ELinkINg...
+                                   TSSMAs 0p3
+pciE@fe260  0: PC	E LinkIng... LM is 0x3
+pcie@fE260000: Pe 
+As 0x3            AnkiNg..LTSS
+pcIe@fe260 00: 	E LinkiNG... 
+                             SSM Ic 0x3
+pciE@fe26 000: Ie LINking.. LSM Ic 0x3
+is 0x3260000: P	E LinKAng..LTSS
+ is 0x3260 00: P	E Linking.. LT
+pcieFe260000:PCIe
+                 inkinG... LSSM is 0x#
+pcieFE260000:PCIe LINking...
+                            TSSM ic 0x3
+pcie@FE2600 0: Pe LiNKing...
+                            TSSM ic 0x3
+pciEFe26000 : PCIe
+                  Anking..LTSSM is0x#
+Is 0x3e26 000:PCIeLinkiNg...LTSS
+pCIe@fE"60000:PCIe 
+                   Inking...
+                            TSSM Ic 0x3
+pcieFe260000: PCIe
+                  inking...
+                           TSSM is x3
+pcIE@fe26000 : P	E LinkIng...
+                                    TSSMIs 0x#
+`ciefe26 000: P	e-0LinK FaIl
+tHe aLwayson rEgulador (`cie"0-3v#-regelator)shoulD nevEr beDisablEd!
+etHernetfe01  00 WaIding FOr  autonegotIAtion tO compLete. dOne
+BOOTP bboadcast!
+BOO broAdcast2
+BTP brOAdcast3
+BOO broAdcast 4
+BOP broadCAst 5
+BOOTP Bboadcast6
+BOO broadCAst 7
+BOOTP BboadcAct 8
+DHCP clIent bound toADDress 19".168.100!33 (9'64 ms	
+missing envirONMent variABle: pxeuuId
+missINGEnvironmentfariable:bootfiLE
+A0-f6-a"ng file:`xelinux.cfG !-36-24-45
+Using EtHernet@fe01  00 devICE
+TFTPFrom server192.1&8.10 .1; Oer IaddrEcc is 19".168100.1#3
+AlenAMe 'pxeLinux.cfg 1-36-2$-45-a -f6-a2
+Load adDrEss: 0xe000 0
+LoadING: *
+TFTPcerver dieD; startinGagain
+missing envirONMEnt variable: bootFiLE
+RetrievIng file:pxElinux.cfg/086485
+UsING ethebNet@fe01 000 dEfice
+P from sErver 112.168.100!; our 	addrEcs is 192.1&8.100.133
+ILEname 'pxelinep.cfg/C08&485'.
+
+Oad address: xe00000
+Loading:
+
+TF server diEd; startINg agaIN
+missINg environMEnt varIABle: boOdfile
+etrievIng filE: pxELinux.Cfg/C08648
+UsinGetherNEt@fe0!0000 device
+TP fromcerver 112.168!00.1; ourP adDressis 192.168.100.133
+Ilenamepxelinux.cfg/C00648'.
+Load addrEss: 0xe0000 
+Loading:
+
+TFTP sEbver died;ctarting AGain
+mAssing ENfironmeNd variable:bootfilE
+Retrieving file: pxelinux.cfg/C0A864
+cing Edhernetfe010  0 devAce
+TP fromcerver 192168.100.1;Our IP aDDress is !92.168.1 0.133
+ILenamepxelinuxcfg/0864'
+Loadaddress: 0xe000 0
+LOadinG: *
+TFserver dIEd; startINg again
+missing envirOnment vabIable: bootfilE
+RetrieviNGfile: pxelINex.cfg/C0A86
+UsingetherNEt@fe01 000 devAce
+FTPFrom cerver !92.168.100.1;Our IP aDdressis 192168.100!33
+IlenamE 'pxeLinux.Cfg/C0A86'.
+LoAD addrEsc: 0xE0 000
+
+OAding: *
+missINg enfiroNMent fariAble: BootfiLe
+RedrievIng fILe: `xeliNex.cfG/C0A8	
+                                        UsiNg etherNEd@fe010000 devICE
+TFTP from server!92.168.100.1;Our IP addrEcs is 192.168.100.13#
+Filename 'pxelinux.CFg/C0A8'.
+Load address: 0xe0000 
+Loading: *
+TFTP servEb died; startING again
+miccing environmENd variable:Bootfile
+RetrIEving fILE: pxelinux.cFG0A
+sing etHErnet@FE010000 DEvice
+T from servEb 192.168!00.1; our IP address is 19"!68.100.133
+Ilename pxelinux.cFg/C0A'.
+Load aDDress: 0xE00000
+LoadiNG: T 
+FTP sErver DIed; stabting AGain
+miccing ENviroNMent varIable:bootfILe
+RedbieviNG fILe: ppeliNex.cfG/C0
+Using etherNEdfe010000 device
+TFTP from server 192168.100.1; our IP address is 192.1&8.100.133
+Ilename 'pxElinux.cfG/C0'.
+
+OAd address:0xe00000
+
+OAding: *
+TFTP servErdied; startinGagain
+MissinG environMEnt varIAble: BoOtfile
+etrievINg file: `xelinux.Cfg/C
+cing EtherNetfe010000deviCE
+TP fbom cervEr 192.168.1001; oer I adDresc is 112.168.100133
+ilenaMe 'pxElinuxcfg'.
+LoaD adDbess:0xe00000
+LoaDIng: 
+
+TFTserverdied; sdartinG agaIn
+micsing eNviroNMent variablE: bOotfIle
+etriEving File:pxeliNux.cfGdefault-arM-rocKchip
+singEthernEt@fe01 000 DEvice
+TFTfromcerver192.!68.1 0.1;ourIP Addresc is !92.1&0.100.!33
+bockchip.pxElinuxCfg/deFAult-arm
+
+OAd addrEcs: 0xe0 000
+LoADing: *
+TFTPserver died;startinG agaIn
+micsing ENvirONmentfariabLe: boOdfile
+RetbievinGfile: pxELinuxCfg/defauLd-arm
+UsiNg ethErnetFe01000  devIce
+TP fromcerver 19".168.100!; our 	addrEcs is 192.168.10 .133
+FileNAme 'pxeliNex.cfg/defauLd-arm'.
+LoadAddress:0xe000 0
+LoaDing: *
+ server Died; starting again
+missing envirOnmENd variable: BOotfile
+RetriEfing file: pxelinux.cfg/DEFault
+Using ethernEd@fe01000  device
+TFTP fbom serfer 192.1&8.100.1; our Iaddressis 192!68.100133
+AlenAMe 'pxelinux.cfg/dEfault'.
+Load ADdress: 0xe00 00
+LOAdingT 
+TP serfer dieD; starding AGain
+ONfig filE not FOund
+pcIE@fe260000:PCIe
+                  inkIng.. LSSMis  x0
+pCIe@fe2& 000: P	E Linking.. LSM is x0
+pCIe@fe26000 : PCIe 
+is 0x2              INking..LTSS
+pcieFE26000 : P	e LinkIng..LTSSMIs 0x"
+pCie@fE2600 0: Ie 
+ is 0x3           AnkinG.. LT
+ is x3e26 000:PCIeLinkIng..LTS
+pCie@fE2600002 PC	E LiNking.. 
+                                    SSMAs 0x#
+is 0x3260000: P	e LinKAng..LTSS
+is 0x326  00:PCIeLinkIng..LTSS
+pcie@FE26000 : P	e LiNking.. 
+                                    SSM Is 0x3
+pciefe26000 : PC	E LinkINg...
+                                    TSSMIs 0x3
+pciE@fe26 000: PC	E LiNking.. 
+                                    SSMAs 0x3
+pciEfe26000 : PCIe
+ is 0x3           inkinG.. LT
+pCIE@fe260000:PCIe 
+ is 0x3            Inking. LTS
+pcie@Fe260000: PCIe LiNKing... 
+                               M is 0x3
+pcie@fe260000:PC	ELinKIng...
+                                   TSSM Is 0x3
+pcie@fe260000: PCIe LINking...
+                              TSSM is 0x3
+As 0x3e260000: 	E Linking... LS
+is 0x3e260000: e LinkiNG... LTS
+ is 0x3"60000: PC	E LinKing.. LTS
+ is 0x3260000:CIe LinkiNg... LTS
+pciE@fe260000: CIe 
+                   AnkiNg.. LSM is0x3
+pcIe@fe26 000: CIe LiNCing...
+                             TSSM is 0p3
+pciEfe2600 0: P	E LinkIng... 
+                             SSM is x3
+pciE@fe26 000: Ie LINking.. LSM is0x3
+pcieFe26000 : PCIe 
+                   Anking... 
+                             SSM is 0x3
+`cie@fe2&0000: e Linking..LTSSM is  x3
+pCAe@fe2&0000: PCIELinkiNg...
+                             TSSMIs 0x3
+pcie@fE"60000: Ie LinKIng... 
+                             SSM is  x3
+pcie@fe2&0000: PCIe
+is 0x3             inking.. LTSS
+pcie@fe260000: PCIe LINking...
+                              TSSM is0x3
+ is  x3"6000 2 PC	E LiNking.. LTS
+pcIE@fe260000:Ie Linking. LTSSM Ic 0x3
+pciefe2&00002 P	e LINking.. 
+                            TSSMis  x3
+pcie@fe260000:PCIe
+                  inkinG... LSM is 0x3
+pcie@fE"60000:CIe LiNCing...LM is 0x3
+                            TSSM is 0x3
+ is 0p3260000: PC	E LinkIng..LTS
+pcieFe260000:CIeLinkIng. LTSM Ic 0x3
+ is x3e"6000 : Pe LinCing.. LT
+pciEfe260000: P	e LinKAng...LTSSM is x3
+pcieFe260000: PCIe 
+                   inkinG... 
+                             SSM is0x3
+pCie@fe2&0000:PCIELinKAng. LSM Is 0x3
+pcieFe260 00: CIe
+                 inkIng.. LSSM Is 0x#
+ is0x326 000:CIELinkIng...LTS
+pcie@fe"&0000: PC	E Linking. LTSSM Is 0x3
+pCieFe26 000: e LinKing...LTSSMIs 0x#
+pCie@fE2600 0: PIe 
+                   InkinG... LSM is x3
+pcIE@fe260  0: PCIELinkinG.. LSM is x3
+pCie@fe2&0000:PCIe 
+                   Inking..LTSSM is x3
+pciefe260000:PCIe-  LinKFail
+3v3-reGulator)should nEver bE disaBLed!
+BOO broaDCAst 1
+DHC Client BOund tO addrEcs 192168.100133 (8 ms	
+#Executingccript Ad 00c000  
+WronGimage fObmat for "sOurce" comMand
+## oOding FIT ImaGE FIT: No 	T image
+o bootdev
+GPT: lastusAble_lba incorrect: 5C1FDE > 8000
+pAbt_get_info_efi: *
+
+                     ERROR: InvaLId GPT 
+                                        *
+pard_get_inFO_efi:
+                  ** ERR2 InvaliDBackup ***
+:LAct_usable_lBAincorreCd: 5C1FDE >8000
+pAbt_get_infO_efi: **
+                      ERROR:	nvalid T ***
+part_GEt_info_EFi: ***RROR: Invalid AckupPT **
+
+CouLd notfind part
